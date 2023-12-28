@@ -2,10 +2,12 @@ import React, { useCallback } from "react";
 import { Col, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../../assets/img/header-img.svg";
+
 import { useState, useEffect } from "react";
 import { useLottie } from "lottie-react";
 import bgAnimation from "../../assets/img/bgAnimate.json";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -61,17 +63,27 @@ function Banner() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my page</span>
-            <h1>
-              {`Hi I'm Anıl Ateş `} <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              I am where I call myself a full stack developer. Come take a look
-              at my inner world. Let's explore together.
-            </p>
-            <button onClick={() => console.log("connect")}>
-              Let's connect <ArrowRightCircle size={25} />
-            </button>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my page</span>
+                  <h1>
+                    {`Hi I'm Anıl Ateş `} <span className="wrap">{text}</span>
+                  </h1>
+                  <p>
+                    I am where I call myself a full stack developer. Come take a
+                    look at my inner world. Let's explore together.
+                  </p>
+                  <button onClick={() => console.log("connect")}>
+                    Let's connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             {View}

@@ -2,7 +2,7 @@ import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { Col, Container, Row } from "react-bootstrap";
 import colorSharp from "../../assets/img/color-sharp.png";
-import Svg from "../Svg/Svg";
+import Svg from "./Svg";
 
 function Skills() {
   const data = [

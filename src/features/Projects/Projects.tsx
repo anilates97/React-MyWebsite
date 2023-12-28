@@ -10,6 +10,7 @@ import adoBilet from "../../assets/img/adoBilet/AdoBilet.png";
 import weatherFlow from "../../assets/img/weatherFlow/WeatherFlow.png";
 import eCommerce from "../../assets/img/E-commerce/E-commerce.png";
 import fastPizza from "../../assets/img/fastPizzaUdemy/fastPizza.png";
+import TrackVisibility from "react-on-screen";
 
 function Projects() {
   const projects = [
@@ -52,12 +53,23 @@ function Projects() {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>
-              Here, you'll find a collection of projects I've undertaken both
-              during my leisure time and when required. The portfolio showcases
-              a total of 6 projects, consisting of 3 in React and 2 in Flutter.
-            </p>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__slideInUp" : ""
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>
+                    Here, you'll find a collection of projects I've undertaken
+                    both during my leisure time and when required. The portfolio
+                    showcases a total of 6 projects, consisting of 3 in React
+                    and 2 in Flutter.
+                  </p>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"

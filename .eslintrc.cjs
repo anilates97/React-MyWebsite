@@ -10,6 +10,10 @@ module.exports = {
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
+  globals: {
+    require: true,
+    process: true,
+  },
   rules: {
     "react-refresh/only-export-components": [
       "warn",
@@ -29,6 +33,7 @@ module.exports = {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-var-requires": "off",
     // Functional
 
     "react/react-in-jsx-scope": "off",
