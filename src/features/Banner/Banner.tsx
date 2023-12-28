@@ -1,29 +1,29 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { Col, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../../assets/img/header-img.svg";
 import { useState, useEffect } from "react";
+import { useLottie } from "lottie-react";
+import bgAnimation from "../../assets/img/bgAnimate.json";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Mobile Developer", "Web Designer"];
+
+  const options = {
+    animationData: bgAnimation,
+    loop: true,
+  };
+
+  const { View } = useLottie(options);
+
   const [text, setText] = useState("");
   const period = 2000;
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
-  useEffect(() => {
-    const ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
+  const tick = useCallback(() => {
+    const toRotate = ["Web Developer", "Mobile Developer"];
     const i = loopNum % toRotate.length;
     const fullText = toRotate[i];
     const updatedText = isDeleting
@@ -33,7 +33,7 @@ function Banner() {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+      setDelta((prevDelta) => prevDelta / 3);
     }
 
     if (!isDeleting && updatedText === fullText) {
@@ -42,30 +42,39 @@ function Banner() {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(250);
     }
-  };
+  }, [isDeleting, loopNum, text.length]);
+
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text, delta, tick]);
 
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
+            <span className="tagline">Welcome to my page</span>
             <h1>
               {`Hi I'm Anıl Ateş `} <span className="wrap">{text}</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit ex nobis eius, iusto error fugit dolore nulla
-              explicabo amet laudantium modi dolorum. Fugit, mollitia.
+              I am where I call myself a full stack developer. Come take a look
+              at my inner world. Let's explore together.
             </p>
             <button onClick={() => console.log("connect")}>
               Let's connect <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" />
+            {View}
           </Col>
         </Row>
       </Container>
