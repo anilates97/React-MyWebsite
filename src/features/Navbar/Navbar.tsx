@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../../assets/img/logo.svg";
+import logo from "../../assets/img/logo.png";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
 import navIcon3 from "../../assets/img/nav-icon3.svg";
+
+import { BrowserRouter as Router } from "react-router-dom";
 
 function CustomNavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -32,7 +34,7 @@ function CustomNavBar() {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" width={120} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -58,7 +60,7 @@ function CustomNavBar() {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#projects"
+              href="#project"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
@@ -79,13 +81,9 @@ function CustomNavBar() {
                 <img src={navIcon3} alt="" />{" "}
               </a>
             </div>
-            <button
-              className="vvd"
-              onClick={() => {
-                console.log("connect");
-              }}
-            >
-              Let's Connect
+
+            <button className="vvd">
+              <span>Let’s Connect</span>
             </button>
           </span>
         </Navbar.Collapse>

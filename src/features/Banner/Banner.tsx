@@ -67,7 +67,7 @@ function Banner() {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__fadeInLeft" : ""
                   }
                 >
                   <span className="tagline">Welcome to my page</span>

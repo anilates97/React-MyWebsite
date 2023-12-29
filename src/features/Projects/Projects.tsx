@@ -15,33 +15,39 @@ import TrackVisibility from "react-on-screen";
 function Projects() {
   const projects = [
     {
+      id: 1,
       title: "AdoBilet & Midlevel Bootcamp",
       description: "Design & Full Stack Web Development",
       imgUrl: adoBilet,
     },
     {
+      id: 2,
       title: "Weather Flow & Freelance",
       description: "Design & Web Development",
       imgUrl: weatherFlow,
     },
     {
+      id: 3,
       title: "E-commerce & Freelance",
       description: "Design & MERN Stack Development",
       imgUrl: eCommerce,
     },
     {
+      id: 4,
       title: "Fast Pizza & Udemy",
       description: "Design & Web Development",
       imgUrl: fastPizza,
     },
 
     {
+      id: 5,
       title: "Movie Science",
       description: "Design & Mobile Development",
       imgUrl: movieScience,
     },
 
     {
+      id: 6,
       title: "Library Simulation & Graduation",
       description: "Design & Mobile Development",
       imgUrl: projBitirme,
@@ -57,7 +63,7 @@ function Projects() {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__slideInUp" : ""
+                    isVisible ? "animate__animated animate__slideInRight" : ""
                   }
                 >
                   <h2>Projects</h2>

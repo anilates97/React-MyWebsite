@@ -51,8 +51,6 @@ h6 {
   line-height: normal;
 }
 
-/* Navbar */
-
 p.success {
   color: green;
 }
@@ -60,6 +58,8 @@ p.success {
 p.danger {
   color: red;
 }
+
+/* Navbar */
 
 nav.navbar {
   padding: 18px 0;
@@ -80,6 +80,7 @@ nav.navbar a.navbar-brand {
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
+  margin-left: 30px;
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
@@ -182,6 +183,21 @@ span.navbar-text {
   position: absolute;
 }
 
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
 nav.navbar .navbar-toggler-icon:focus {
   border-bottom: 2px solid #fff;
 }
@@ -201,6 +217,12 @@ nav.navbar .navbar-toggler-icon:before {
 
 nav.navbar .navbar-toggler-icon:after {
   top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
 }
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
@@ -228,10 +250,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(
-    90.21deg,
-    rgba(170, 54, 124, 0.5) -5.91% rgba(74, 47, 189, 0, 5) 111.58%
-  );
+  background: linear-gradient(90.21deg, #6f7ab6 -5.91%, #382591 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-top: 16px;
@@ -256,7 +275,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
-  color: #000;
+  background-color: transparent;
+  color: #ffffff;
   padding: 1rem;
   font-weight: 700;
   font-size: 20px;
@@ -361,7 +381,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 40px 0;
 
   position: relative;
-  background-color: black;
+  background-color: rgb(34, 34, 34);
 }
 
 .project h2 {
@@ -437,17 +457,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.projectDetail {
+  padding: 40px 0;
+
+  position: relative;
+  background-color: rgb(34, 34, 34);
+}
+
+.projectDetail h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.projectDetail p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.projectDetail img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  cursor: pointer;
+}
+.proj-imgbx img {
+  width: 100%; /* Resmin genişliği */
+  height: auto; /* Otomatik yükseklik */
 }
 
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #6f7ab6 -5.91%, #382591 111.58%);
-  opacity: 0.85;
+  opacity: 0.75;
   position: absolute;
   width: 100%;
   height: 0;
@@ -459,6 +512,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-txtx {
+  color: #fff;
   position: absolute;
   text-align: center;
   top: 65%;
@@ -479,6 +533,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+}
+
+@media (min-width: 576px) {
+  .proj-txtx h4 {
+    font-size: 14px; /* veya istediğiniz boyut */
+  }
+}
+
+@media (min-width: 992px) {
+  .proj-txtx h4 {
+    font-size: 25px; /* veya istediğiniz boyut */
+  }
 }
 
 .proj-txtx span {
@@ -575,7 +641,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Footer */
 .footer {
-  padding: 0 0 50px 0;
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
@@ -594,7 +659,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #6f7ab6 -5.91%, #382591 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -626,7 +691,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #6f7ab6 -5.91%, #382591 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
@@ -634,11 +699,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 19px;
 }
 
-.footer img {
+footer img {
   width: 26%;
 }
 
-.footer p {
+footer p {
   font-weight: 400;
   font-size: 14px;
   color: #b8b8b8;
