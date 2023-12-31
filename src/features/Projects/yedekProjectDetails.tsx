@@ -29,33 +29,35 @@ function ProjectsDetail() {
       <section className="projectDetail" id="project">
         <Container>
           <Row className="row-gap-3">
-            <Col sm={12}>
+            <Col sm={5} md={6} lg={8}>
               <h2>{title}</h2>
               <p>{description}</p>
             </Col>
-
-            <Col sm={12}>
+            <Col sm={3}>
               <h4>Mainly Used Tech</h4>
               <ul className="tech">
                 {mainlyUsedTechnologies.map(
                   (item: MainlyUsedTech, index: number) => (
                     <Row key={index}>
-                      <li className="tech-item d-flex flex-column justify-content-center align-items-center">
-                        <span className="tech-text">{item.name} </span>
-                        <img
-                          className="tech-image "
-                          src={item.img}
-                          alt="Tech Image"
-                        />
+                      <li className="tech-item d-flex gap-4">
+                        <span className="tech-text">
+                          {item.name}{" "}
+                          <img
+                            className="tech-image "
+                            src={item.img}
+                            alt="Tech Image"
+                          />
+                        </span>
                       </li>
                     </Row>
                   )
                 )}
               </ul>
             </Col>
+
             <Row className="row-gap-4 shadow-lg">
               {imgUrl.map((item: string, i: number) => (
-                <Col xxl={3} xl={3} lg={4} md={6} key={i}>
+                <Col sm={3} key={i}>
                   <img
                     src={item}
                     alt="Project Image"

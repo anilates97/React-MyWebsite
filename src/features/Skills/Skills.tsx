@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "react-multi-carousel/lib/styles.css";
 import { Col, Container, Row } from "react-bootstrap";
 import colorSharp from "../../assets/img/color-sharp.png";
 import Svg from "./Svg";
+import { Element } from "react-scroll";
+import { useLocation } from "react-router-dom";
 
 function Skills() {
   const data = [
@@ -60,22 +62,24 @@ function Skills() {
 
   return (
     <section className="skill" id="skills">
-      <Container>
-        <Row>
-          <Col>
-            <div className="skill-bx">
-              <h2>Skills</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                nam necessitatibus fuga sed porro distinctio alias dolores
-                officia impedit suscipit repellendus, accusamus natus facilis
-                inventore.
-              </p>
-              <Svg svgData={data} />
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Element name="skills">
+        <Container>
+          <Row>
+            <Col>
+              <div className="skill-bx">
+                <h2>Skills</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                  nam necessitatibus fuga sed porro distinctio alias dolores
+                  officia impedit suscipit repellendus, accusamus natus facilis
+                  inventore.
+                </p>
+                <Svg svgData={data} />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Element>
       <img src={colorSharp} alt="" className="background-image-left" />
     </section>
   );

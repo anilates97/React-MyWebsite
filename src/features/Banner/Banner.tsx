@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useRef } from "react";
 import { Col, Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -8,10 +8,14 @@ import { useLottie } from "lottie-react";
 import bgAnimation from "../../assets/img/bgAnimate.json";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const navigate = useNavigate();
+  const bannerRef = useRef(null);
 
   const options = {
     animationData: bgAnimation,
@@ -78,9 +82,11 @@ function Banner() {
                     I am where I call myself a full stack developer. Come take a
                     look at my inner world. Let's explore together.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let's connect <ArrowRightCircle size={25} />
-                  </button>
+                  <Link className="link" to="connect" offset={-175}>
+                    <button>
+                      Contact Me <ArrowRightCircle size={25} />
+                    </button>
+                  </Link>
                 </div>
               )}
             </TrackVisibility>

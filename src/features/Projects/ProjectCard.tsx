@@ -2,17 +2,33 @@ import React from "react";
 import { Button, Col } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
+export type MainlyUsedTech = {
+  name: string;
+  img: string;
+};
+
 type ProjectCardProps = {
   id: number;
   title: string;
+  type: string;
+  imgUrl: string[];
   description: string;
-  imgUrl: string;
+  mainlyUsedTechnologies: MainlyUsedTech[];
 };
 
-function ProjectCard({ title, description, imgUrl, id }: ProjectCardProps) {
+function ProjectCard({
+  title,
+  type,
+  imgUrl,
+  id,
+  description,
+  mainlyUsedTechnologies,
+}: ProjectCardProps) {
   const propCard = {
     title,
+    type,
     description,
+    mainlyUsedTechnologies,
     imgUrl,
     id,
   };
@@ -24,14 +40,14 @@ function ProjectCard({ title, description, imgUrl, id }: ProjectCardProps) {
         onClick={() =>
           navigate(`/projectDetail/${id}`, {
             replace: true,
-            state: { propCard },
+            state: { propCard, isDetailHome: false },
           })
         }
       >
-        <img src={imgUrl} alt="" />
+        <img src={imgUrl[0]} alt="" />
         <div className="proj-txtx">
           <h4 className="text-xs">{title}</h4>
-          <span>{description}</span>
+          <span>{type}</span>
         </div>
       </button>
     </Col>
