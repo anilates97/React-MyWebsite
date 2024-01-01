@@ -42,7 +42,7 @@ function Projects() {
                     <p>
                       Here, you'll find a collection of projects I've undertaken
                       both during my leisure time and when required. The
-                      portfolio showcases a total of 6 projects, consisting of 3
+                      portfolio showcases a total of 6 projects, consisting of 4
                       in React and 2 in Flutter.
                     </p>
                   </div>

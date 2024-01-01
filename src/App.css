@@ -463,14 +463,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx {
   position: relative;
+  width: 100%;
+  height: 0;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  padding-top: 75%;
   cursor: pointer;
 }
 .proj-imgbx img {
-  width: 100%; /* Resmin genişliği */
-  height: auto; /* Otomatik yükseklik */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .proj-imgbx::before {
@@ -478,9 +485,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #6f7ab6 -5.91%, #382591 111.58%);
   opacity: 0.75;
   position: absolute;
+  z-index: 1;
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+  top: 0;
+  left: 0;
 }
 
 .proj-imgbx:hover::before {
@@ -492,6 +502,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   text-align: center;
   top: 65%;
+  z-index: 2;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
@@ -575,10 +586,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #2a1e1e;
 }
 
-.projectDetail img {
-  width: 100%;
-  border-top: 5px solid #6f7ab6;
+.image-container {
+  position: relative;
+  padding-top: 75.66%;
   border-radius: 20px;
+
+  overflow: hidden;
+
+  border-top: 5px solid #6f7ab6;
+}
+
+.swiper-slide {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-container img {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .projectDetail .tech {
@@ -621,6 +651,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .custom-shadow {
   box-shadow: 0 0 5px #382591; /* Örnek gölge efekti */
   background-color: white; /* Beyaz arkaplan */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #c6c5c7;
+  border-radius: 100px;
+  padding: 2.1rem;
+
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: transparent;
+  }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #939294;
 }
 
 /* Contact */

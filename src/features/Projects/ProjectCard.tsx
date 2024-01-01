@@ -34,7 +34,7 @@ function ProjectCard({
   };
   const navigate = useNavigate();
   return (
-    <Col sm={6} md={4}>
+    <Col sm={12} md={6} lg={4}>
       <button
         className="proj-imgbx"
         onClick={() =>

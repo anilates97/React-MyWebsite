@@ -6,10 +6,23 @@ import movieScience4 from "../../assets/img/MovieScience/4.png";
 import movieScience5 from "../../assets/img/MovieScience/5.png";
 import movieScience6 from "../../assets/img/MovieScience/6.png";
 
-import projBitirme from "../../assets/img/bitirmeP/BitirmeP.png";
+import projBitirme1 from "../../assets/img/bitirmeP/1.png";
+import projBitirme2 from "../../assets/img/bitirmeP/2.png";
+import projBitirme3 from "../../assets/img/bitirmeP/3.png";
+import projBitirme4 from "../../assets/img/bitirmeP/4.png";
+import projBitirme5 from "../../assets/img/bitirmeP/5.png";
+import projBitirme6 from "../../assets/img/bitirmeP/6.png";
+import projBitirme7 from "../../assets/img/bitirmeP/7.png";
+import projBitirme8 from "../../assets/img/bitirmeP/8.png";
+import projBitirme9 from "../../assets/img/bitirmeP/9.png";
+import projBitirme10 from "../../assets/img/bitirmeP/10.png";
+import projBitirme11 from "../../assets/img/bitirmeP/11.png";
+
 import adoBilet from "../../assets/img/adoBilet/AdoBilet.png";
+
 import adoBilet1 from "../../assets/img/adoBilet/1.png";
 import adoBilet2 from "../../assets/img/adoBilet/2.png";
+
 import adoBilet3 from "../../assets/img/adoBilet/3.png";
 import adoBilet4 from "../../assets/img/adoBilet/4.png";
 
@@ -36,7 +49,7 @@ import fastPizza3 from "../../assets/img/fastPizzaUdemy/3.png";
 import fastPizza4 from "../../assets/img/fastPizzaUdemy/4.png";
 import fastPizza5 from "../../assets/img/fastPizzaUdemy/5.png";
 import fastPizza6 from "../../assets/img/fastPizzaUdemy/6.png";
-import fastPizza7 from "../../assets/img/fastPizzaUdemy/7.png";
+
 import reactImg from "../../assets/img/react-javascript-js-framework-facebook-svgrepo-com.svg";
 
 export const projects = [
@@ -48,6 +61,7 @@ export const projects = [
       adoBilet,
       adoBilet1,
       adoBilet2,
+
       adoBilet3,
       adoBilet4,
       adoBilet6,
@@ -84,7 +98,7 @@ export const projects = [
         img: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg",
       },
       {
-        name: "Google Maps",
+        name: "GMaps",
         img: "https://e7.pngegg.com/pngimages/27/774/png-clipart-google-maps-google-i-o-logo-map-icon-google-map-logo-text-sign.png",
       },
     ],
@@ -155,7 +169,6 @@ export const projects = [
       fastPizza4,
       fastPizza5,
       fastPizza6,
-      fastPizza7,
     ],
     description:
       "I have a project called FastPizza. In this project, users can place pizza orders. Once an order is placed, there's an interface to track the order. Tailwind and Redux were used as tools for this project. Initially, the user encounters a screen to input their name, followed by transitioning to the order process. Geolocation is utilized to determine the user's location while placing an order. Additionally, there's an option to prioritize orders, albeit incurring an extra cost during or after the order placement process.",
@@ -240,7 +253,19 @@ export const projects = [
     id: 6,
     title: "Library Simulation & Graduation",
     type: "Design & Mobile Development",
-    imgUrl: [projBitirme],
+    imgUrl: [
+      projBitirme1,
+      projBitirme2,
+      projBitirme3,
+      projBitirme4,
+      projBitirme5,
+      projBitirme6,
+      projBitirme7,
+      projBitirme8,
+      projBitirme9,
+      projBitirme10,
+      projBitirme11,
+    ],
     description:
       "I have a project named Library Simulation, which is also my graduation project. The application was developed using Flutter and functions as a library archive system. It showcases popular books and allows users to add their preferred books to their personal libraries. Features like adding, deleting, and updating books are available. Additionally, advanced filtering options exist. Users can create, delete, update shelves, and view them. It's possible to place books on appropriate shelves before adding them to the archive. Books can be listed by categories. The app provides Dark Mode and Light Mode options. The 'Lucky Book' feature was added to randomly showcase a book. Users can view and follow other users, utilizing an optional tracking system. Each user has their own library archive, and the following is based on preferences regarding archive likes. Users have the option to hide their archives if they prefer.",
     mainlyUsedTechnologies: [
@@ -257,7 +282,7 @@ export const projects = [
         img: "https://codeclusive.io/blog/riverpod-state-management/images/riverpod.png",
       },
       {
-        name: "Font Awesome",
+        name: "FAwesome",
         img: "https://www.yucelalkan.com/uploads/fontawesome-kullanimi_5_5_1_b.jpg",
       },
       {

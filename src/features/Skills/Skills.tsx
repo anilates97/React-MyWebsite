@@ -69,10 +69,17 @@ function Skills() {
               <div className="skill-bx">
                 <h2>Skills</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
-                  nam necessitatibus fuga sed porro distinctio alias dolores
-                  officia impedit suscipit repellendus, accusamus natus facilis
-                  inventore.
+                  With a passion for coding and a keen interest in the world of
+                  software, I've cultivated a broad spectrum of technical
+                  skills. I possess a strong knowledge base in areas like web
+                  development, app design, and database management. Leveraging
+                  my ability to proficiently work with both front-end and
+                  back-end technologies, I strive to create user-friendly and
+                  functional solutions. My experiences in bringing innovative
+                  ideas to life provide me with a unique perspective for each
+                  project. Prioritizing continuous learning and staying updated
+                  on tech trends, I aim to continually advance as a professional
+                  in this ever-evolving field.
                 </p>
                 <Svg svgData={data} />
               </div>

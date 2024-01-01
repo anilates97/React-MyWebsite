@@ -1,15 +1,26 @@
 import React, { useEffect } from "react";
 import CustomNavBar from "../Navbar/Navbar";
 import Banner from "../Banner/Banner";
-import Skills from "../Skills/Skills";
+
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import { MainlyUsedTech } from "./ProjectCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { EffectCoverflow } from "swiper/modules";
+import { useSwiper } from "swiper/react";
+import navIcon1 from "../../assets/img/contact-img.svg";
+
+import "swiper/css";
 
 function ProjectsDetail() {
   const location = useLocation();
+  const swiper = useSwiper();
   const { propCard } = location.state;
   const { title, type, description, mainlyUsedTechnologies, imgUrl, id } =
     propCard;
@@ -53,17 +64,53 @@ function ProjectsDetail() {
                 )}
               </ul>
             </Col>
-            <Row className="row-gap-4 shadow-lg">
-              {imgUrl.map((item: string, i: number) => (
-                <Col xxl={3} xl={3} lg={4} md={6} key={i}>
-                  <img
-                    src={item}
-                    alt="Project Image"
-                    className="custom-shadow"
-                  />
-                </Col>
-              ))}
-            </Row>
+            {imgUrl.length > 1 ? (
+              <Swiper
+                breakpoints={{
+                  1024: {
+                    slidesPerView: 2,
+                  },
+                  768: {
+                    slidesPerView: 1,
+                  },
+                  150: {
+                    slidesPerView: 1,
+                  },
+                }}
+                navigation
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                spaceBetween={75}
+                modules={[
+                  Navigation,
+                  Pagination,
+                  Scrollbar,
+                  A11y,
+                  EffectCoverflow,
+                ]}
+                effect="coverflow"
+                grabCursor
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 250,
+                  modifier: 1,
+                  slideShadows: true,
+                }}
+              >
+                {imgUrl.map((item: string, i: number) => (
+                  <SwiperSlide key={i}>
+                    <div className="image-container ">
+                      <img src={item} alt="Project Image" />
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : (
+              <div className="image-container ">
+                <img src={imgUrl[0]} alt="Project Image" />
+              </div>
+            )}
           </Row>
         </Container>
       </section>
