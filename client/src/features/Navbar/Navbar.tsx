@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/img/logo.png";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
-import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 import { Link } from "react-scroll";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -48,19 +47,6 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
   const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
   };
-
-  // const handleClickHome = () => {
-  //   navigate("/", {
-  //     state: { isDetailToHome: true },
-  //   });
-
-  //   const projectSection = document.getElementById("project");
-  //   if (projectSection) {
-  //     projectSection.scrollIntoView({
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // };
 
   const handleClickSkills = () => {
     navigate("/", {
@@ -151,9 +137,6 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
               </a>
               <a href="https://github.com/anilates97">
                 <img src={navIcon2} alt="" />{" "}
-              </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />{" "}
               </a>
             </div>
           </span>

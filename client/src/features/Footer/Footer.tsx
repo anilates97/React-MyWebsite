@@ -4,7 +4,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import logo from "../../assets/img/logo.png";
 import navIcon1 from "../../assets/img/nav-icon1.svg";
 import navIcon2 from "../../assets/img/nav-icon2.svg";
-import navIcon3 from "../../assets/img/nav-icon3.svg";
 
 function Footer() {
   return (
@@ -33,9 +32,6 @@ function Footer() {
               </a>
               <a href="https://github.com/anilates97">
                 <img src={navIcon2} alt="" />{" "}
-              </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />{" "}
               </a>
             </div>
           </Col>
