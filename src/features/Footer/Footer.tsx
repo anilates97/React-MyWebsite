@@ -16,22 +16,26 @@ function Footer() {
               className="d-flex justify-content-center align-items-center"
               style={{ minHeight: "180px" }}
             >
-              <img src={logo} alt="Logo" className="img-fluid text-sm " />
+              <img
+                src={logo}
+                alt="Logo"
+                className="img-fluid text-sm footer-logo"
+              />
             </div>
           </Col>
-          <Col sm={4} size={12} className="text-center text-sm-end">
+          <Col sm={4} size={12} className="text-center text-sm-end copyright">
             <p className="m-0">Copyright 2024 &copy; All Right Reserved</p>
           </Col>
           <Col sm={4} size={12} className="text-center text-sm-end">
             <div className="social-icon mt-sm-0 mt-4 ">
-              <a href="">
-                <img src={navIcon1} alt="Icon" />
+              <a href="https://www.linkedin.com/in/anilates97/">
+                <img src={navIcon1} alt="" />{" "}
               </a>
-              <a href="">
-                <img src={navIcon2} alt="Icon" />
+              <a href="https://github.com/anilates97">
+                <img src={navIcon2} alt="" />{" "}
               </a>
-              <a href="">
-                <img src={navIcon3} alt="Icon" />
+              <a href="#">
+                <img src={navIcon3} alt="" />{" "}
               </a>
             </div>
           </Col>

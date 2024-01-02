@@ -1,10 +1,11 @@
 import React from "react";
 import movieScience1 from "../../assets/img/MovieScience/1.png";
 import movieScience2 from "../../assets/img/MovieScience/2.png";
-import movieScience3 from "../../assets/img/MovieScience/3.png";
+
 import movieScience4 from "../../assets/img/MovieScience/4.png";
 import movieScience5 from "../../assets/img/MovieScience/5.png";
 import movieScience6 from "../../assets/img/MovieScience/6.png";
+import movieScience7 from "../../assets/img/MovieScience/222.png";
 
 import projBitirme1 from "../../assets/img/bitirmeP/1.png";
 import projBitirme2 from "../../assets/img/bitirmeP/2.png";
@@ -16,7 +17,6 @@ import projBitirme7 from "../../assets/img/bitirmeP/7.png";
 import projBitirme8 from "../../assets/img/bitirmeP/8.png";
 import projBitirme9 from "../../assets/img/bitirmeP/9.png";
 import projBitirme10 from "../../assets/img/bitirmeP/10.png";
-import projBitirme11 from "../../assets/img/bitirmeP/11.png";
 
 import adoBilet from "../../assets/img/adoBilet/AdoBilet.png";
 
@@ -217,10 +217,11 @@ export const projects = [
     imgUrl: [
       movieScience1,
       movieScience2,
-      movieScience3,
+
       movieScience4,
       movieScience5,
       movieScience6,
+      movieScience7,
     ],
     description:
       "I have a project called Movie Science. In this project, users can view popular movies and their detailed pages. Users can add movies they like to the 'favorites' list. We have the option to add quotes to our favorite movies or view existing quotes. Subsequently, the quotes for these movies are displayed on the application screen, and we can vote on these quotes. The given votes are also displayed on the screen. Flutter was used in this project.",
@@ -264,7 +265,6 @@ export const projects = [
       projBitirme8,
       projBitirme9,
       projBitirme10,
-      projBitirme11,
     ],
     description:
       "I have a project named Library Simulation, which is also my graduation project. The application was developed using Flutter and functions as a library archive system. It showcases popular books and allows users to add their preferred books to their personal libraries. Features like adding, deleting, and updating books are available. Additionally, advanced filtering options exist. Users can create, delete, update shelves, and view them. It's possible to place books on appropriate shelves before adding them to the archive. Books can be listed by categories. The app provides Dark Mode and Light Mode options. The 'Lucky Book' feature was added to randomly showcase a book. Users can view and follow other users, utilizing an optional tracking system. Each user has their own library archive, and the following is based on preferences regarding archive likes. Users have the option to hide their archives if they prefer.",

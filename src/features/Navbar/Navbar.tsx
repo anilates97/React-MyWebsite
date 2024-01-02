@@ -84,55 +84,64 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Link to="home" onClick={() => (isDetail ? navigate("/") : null)}>
-          <Navbar.Brand href="#">
-            <img src={logo} alt="Logo" width={120} />
-          </Navbar.Brand>
+        <Link
+          className="navbar-brand"
+          to="home"
+          onClick={() => (isDetail ? navigate("/") : null)}
+        >
+          <img src={logo} alt="Logo" width={100} />
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="home" onClick={() => (isDetail ? navigate("/") : null)}>
-              <Nav.Link
-                className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("home")}
-              >
-                Home
-              </Nav.Link>
+            <Link
+              className={
+                activeLink === "home"
+                  ? "active navbar-link nav-link"
+                  : "navbar-link nav-link"
+              }
+              to="home"
+              onClick={() => {
+                onUpdateActiveLink("home");
+                if (isDetail) navigate("/");
+                else null;
+              }}
+            >
+              Home
             </Link>
             <Link
+              className={
+                activeLink === "skills"
+                  ? "active navbar-link nav-link"
+                  : "navbar-link nav-link"
+              }
               to="skills"
               offset={-100}
-              onClick={isDetail ? handleClickSkills : () => {}}
+              onClick={() => {
+                onUpdateActiveLink("skills");
+                if (isDetail) handleClickSkills();
+                else return;
+              }}
             >
-              <Nav.Link
-                className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("skills")}
-              >
-                Skills
-              </Nav.Link>
+              Skills
             </Link>
             <Link
+              className={
+                activeLink === "projects"
+                  ? "active navbar-link nav-link"
+                  : "navbar-link nav-link"
+              }
               to="project"
               offset={isDetail ? 500 : -100}
-              onClick={isDetail ? handleClickProject : () => {}}
+              onClick={() => {
+                onUpdateActiveLink("projects");
+                if (isDetail) handleClickProject();
+                else return;
+              }}
             >
-              <Nav.Link
-                className={
-                  activeLink === "projects"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("projects")}
-              >
-                Projects
-              </Nav.Link>
+              Projects
             </Link>
           </Nav>
           <span className="navbar-text">
