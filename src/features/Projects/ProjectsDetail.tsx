@@ -13,17 +13,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { EffectCoverflow } from "swiper/modules";
-import { useSwiper } from "swiper/react";
-import navIcon1 from "../../assets/img/contact-img.svg";
 
 import "swiper/css";
 
 function ProjectsDetail() {
   const location = useLocation();
-  const swiper = useSwiper();
+
   const { propCard } = location.state;
-  const { title, type, description, mainlyUsedTechnologies, imgUrl, id } =
-    propCard;
+  const { title, description, mainlyUsedTechnologies, imgUrl } = propCard;
 
   useEffect(() => {
     const projectSection = document.getElementById("project");

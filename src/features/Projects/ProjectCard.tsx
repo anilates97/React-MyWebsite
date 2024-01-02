@@ -1,6 +1,6 @@
 import React from "react";
-import { Button, Col } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
+import { Col } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 export type MainlyUsedTech = {
   name: string;

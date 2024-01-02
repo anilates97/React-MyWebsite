@@ -20,11 +20,13 @@ function Projects() {
       window.scrollTo({
         top: state?.isDetailToProjects
           ? projectSection.offsetTop + 500
-          : projectSection.offsetTop - 100,
+          : state?.isDetailToSkills
+          ? projectSection.offsetTop - 100
+          : projectSection.offsetTop - 1000,
         behavior: "smooth",
       });
     }
-  }, [state?.isDetailToProjects]);
+  }, [state?.isDetailToProjects, state?.isDetailToSkills]);
   return (
     <section className="project" id="project">
       <Element name="project">

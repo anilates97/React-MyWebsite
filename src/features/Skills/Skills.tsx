@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { Col, Container, Row } from "react-bootstrap";
 import colorSharp from "../../assets/img/color-sharp.png";
 import Svg from "./Svg";
 import { Element } from "react-scroll";
-import { useLocation } from "react-router-dom";
 
 function Skills() {
   const data = [

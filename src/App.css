@@ -91,7 +91,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 
 nav.navbar .navbar-nav .navbar-link {
   cursor: pointer;
-  text-decoration: none;
+}
+
+.navbar-brand {
+  cursor: pointer;
 }
 
 nav.navbar .navbar-nav .navbar-link:hover,
