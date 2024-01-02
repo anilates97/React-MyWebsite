@@ -46,7 +46,7 @@ function Contact() {
     setButtonText("Sending...");
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch("https://my-website-server-one.vercel.app", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
