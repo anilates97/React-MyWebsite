@@ -10,6 +10,7 @@ const app = express();
 app.listen(process.env.PORT, () =>
   console.log("Server Running", process.env.PORT)
 );
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
@@ -28,6 +29,10 @@ contactEmail.verify((error) => {
   } else {
     console.log("Ready to Send");
   }
+});
+
+router.get("/contact", (req, res) => {
+  res.send("Server is ready!");
 });
 
 router.post("/contact", (req, res) => {
