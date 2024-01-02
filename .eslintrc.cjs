@@ -34,6 +34,7 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "no-undef": ["error", { typeof: true, module: true }],
     // Functional
 
     "react/react-in-jsx-scope": "off",
