@@ -1,11 +1,8 @@
-const express = require("express");
+const handler = async (req, res) => {
+  return {
+    statusCode: 200,
+    body: "server is running",
+  };
+};
 
-const app = express();
-
-app.use("/", (req, res) => {
-  res.send("server is running");
-});
-
-app.listen(process.env.PORT, () =>
-  console.log("Server started on port", process.env.PORT)
-);
+module.exports = { handler };
