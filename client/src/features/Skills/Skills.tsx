@@ -48,7 +48,7 @@ function Skills() {
       degValue: 0.48,
     },
     {
-      svgText: "ExpressJS",
+      svgText: "NodeJS",
       deg: "%52",
       degValue: 0.52,
     },
