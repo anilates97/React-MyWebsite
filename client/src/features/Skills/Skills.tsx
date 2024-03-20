@@ -38,8 +38,8 @@ function Skills() {
       degValue: 0.7,
     },
     {
-      svgText: "SASS",
-      deg: "%70",
+      svgText: "NextJS",
+      deg: "%50",
       degValue: 0.7,
     },
     {
