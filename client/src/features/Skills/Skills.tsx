@@ -40,7 +40,7 @@ function Skills() {
     {
       svgText: "NextJS",
       deg: "%50",
-      degValue: 0.7,
+      degValue: 0.5,
     },
     {
       svgText: "SQL",
