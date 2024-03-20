@@ -77,8 +77,7 @@ function Banner() {
                     {`Hi I'm Anıl Ateş `} <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    I am where I call myself a full stack developer. Come take a
-                    look at my inner world. Let's explore together.
+                    Come take a look at my inner world. Let's explore together.
                   </p>
                   <Link className="link" to="connect" offset={-175}>
                     <button>
