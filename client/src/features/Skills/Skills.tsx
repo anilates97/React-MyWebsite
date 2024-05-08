@@ -34,8 +34,8 @@ function Skills() {
     },
     {
       svgText: "CSS",
-      deg: "%70",
-      degValue: 0.7,
+      deg: "%100",
+      degValue: 1,
     },
     {
       svgText: "NextJS",

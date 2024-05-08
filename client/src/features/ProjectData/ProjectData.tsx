@@ -32,7 +32,6 @@ import adoBilet8 from "../../assets/img/adoBilet/8.png";
 import adoBilet9 from "../../assets/img/adoBilet/9.png";
 import adoBilet10 from "../../assets/img/adoBilet/10.png";
 
-import weatherFlow from "../../assets/img/weatherFlow/WeatherFlow.png";
 import eCommerce1 from "../../assets/img/E-commerce/1.png";
 import eCommerce2 from "../../assets/img/E-commerce/2.png";
 import eCommerce3 from "../../assets/img/E-commerce/3.png";
@@ -49,6 +48,16 @@ import fastPizza3 from "../../assets/img/fastPizzaUdemy/3.png";
 import fastPizza4 from "../../assets/img/fastPizzaUdemy/4.png";
 import fastPizza5 from "../../assets/img/fastPizzaUdemy/5.png";
 import fastPizza6 from "../../assets/img/fastPizzaUdemy/6.png";
+
+import estate1 from "../../assets/img/estate/1.png";
+import estate2 from "../../assets/img/estate/2.png";
+import estate3 from "../../assets/img/estate/3.png";
+import estate4 from "../../assets/img/estate/4.png";
+import estate5 from "../../assets/img/estate/5.png";
+import estate6 from "../../assets/img/estate/6.png";
+import estate7 from "../../assets/img/estate/7.png";
+import estate8 from "../../assets/img/estate/8.png";
+import estate9 from "../../assets/img/estate/9.png";
 
 import reactImg from "../../assets/img/react-javascript-js-framework-facebook-svgrepo-com.svg";
 
@@ -193,12 +202,26 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Weather Flow & Freelance",
+    title: "Estate App & Freelance",
     type: "Design & Web Development",
-    imgUrl: [weatherFlow],
+    imgUrl: [
+      estate1,
+      estate2,
+      estate3,
+      estate4,
+      estate5,
+      estate6,
+      estate7,
+      estate8,
+      estate9,
+    ],
     description:
-      "My first experience with React was developing a weather querying application. This project was created to query and display weather data.",
+      "I developed a mobile-responsive real estate application using React. I integrated Auth0 and Leaflet for authentication and map functionality. Users can make reservations, create favorite lists, and view/search residences based on their locations.",
     mainlyUsedTechnologies: [
+      {
+        name: "Typescript",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+      },
       {
         name: "React",
         img: reactImg,
@@ -206,6 +229,38 @@ export const projects = [
       {
         name: "Context",
         img: "https://miro.medium.com/v2/resize:fit:1000/0*CdSOpVAdLxMvlh7D.png",
+      },
+      {
+        name: "Mantine",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57rsMTp7tXoWGijtNnFsE3nWru0QFnEzex4uOBl76_Q&sg",
+      },
+      {
+        name: "Axios",
+        img: "https://axios-http.com/assets/logo.svg",
+      },
+      {
+        name: "Auth0",
+        img: "https://cdn.hashnode.com/res/hashnode/image/upload/v1605953217279/M-vk-LPrs.png",
+      },
+      {
+        name: "Leaflet",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxW8POqMIbIFECHj84m6UwRU34jaA5fbOahtGraoFN&s",
+      },
+      {
+        name: "React Query",
+        img: "https://miro.medium.com/v2/resize:fit:513/1*NvNjVbjTCT_qqloPnR098w.png",
+      },
+      {
+        name: "Swiper",
+        img: "https://miro.medium.com/v2/resize:fit:1128/1*FbvMJKVVYzfHGG3b0NaJGg.png",
+      },
+      {
+        name: "Prisma",
+        img: "https://camo.githubusercontent.com/1899b1c9cea6723925368e3d3ce3b9fb0d88c25e1c0f2f2a90c036f07e2ce81e/68747470733a2f2f692e696d6775722e636f6d2f774434725674342e706e67",
+      },
+      {
+        name: "Express",
+        img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA",
       },
     ],
   },
