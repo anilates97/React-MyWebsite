@@ -44,8 +44,8 @@ function Projects() {
                     <p>
                       Here, you'll find a collection of projects I've undertaken
                       both during my leisure time and when required. The
-                      portfolio showcases a total of 6 projects, consisting of 4
-                      in React and 2 in Flutter.
+                      portfolio showcases a total of 8 projects, consisting of 4
+                      in React and 2 in React Native and 2 in Flutter.
                     </p>
                   </div>
                 )}
@@ -66,12 +66,20 @@ function Projects() {
                 <Tab.Content>
                   <Tab.Pane eventKey="first">
                     <Row>
-                      {projects.map((project, index) => {
-                        return <ProjectCard key={index} {...project} />;
-                      })}
+                      {projects.map(
+                        (project, index) =>
+                          index < 6 && <ProjectCard key={index} {...project} />
+                      )}
                     </Row>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="second">Coming Soon..</Tab.Pane>
+                  <Tab.Pane eventKey="second">
+                    <Row>
+                      {projects.map(
+                        (project, index) =>
+                          index >= 6 && <ProjectCard key={index} {...project} />
+                      )}
+                    </Row>
+                  </Tab.Pane>
                 </Tab.Content>
               </Tab.Container>
             </Col>

@@ -453,7 +453,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: transparent;
   padding: 17px 0;
   border-radius: 0;
-  color: #fff;
+  color: linear-gradient(90.21deg, #6f7ab6 -5.91%, #382591 111.58%);
   width: 100%;
   font-size: 17px;
   letter-spacing: 0.8px;
@@ -473,7 +473,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  z-index: 1;
+  z-index: -1;
 }
 
 .project .nav.nav-pills .nav-link.active::before {
@@ -481,6 +481,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .project .nav.nav-pills .nav-link.active {
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 1);
 }
 

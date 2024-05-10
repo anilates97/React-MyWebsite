@@ -7,6 +7,12 @@ import movieScience5 from "../../assets/img/MovieScience/5.png";
 import movieScience6 from "../../assets/img/MovieScience/6.png";
 import movieScience7 from "../../assets/img/MovieScience/222.png";
 
+import expPlace1 from "../../assets/img/explore-place/1.png";
+import expPlace2 from "../../assets/img/explore-place/2.png";
+import expPlace3 from "../../assets/img/explore-place/3.png";
+import expPlace4 from "../../assets/img/explore-place/4.png";
+import expPlace5 from "../../assets/img/explore-place/5.png";
+
 import projBitirme1 from "../../assets/img/bitirmeP/1.png";
 import projBitirme2 from "../../assets/img/bitirmeP/2.png";
 import projBitirme3 from "../../assets/img/bitirmeP/3.png";
@@ -58,6 +64,14 @@ import estate6 from "../../assets/img/estate/6.png";
 import estate7 from "../../assets/img/estate/7.png";
 import estate8 from "../../assets/img/estate/8.png";
 import estate9 from "../../assets/img/estate/9.png";
+
+import foodOrder1 from "../../assets/img/foodOrder/1.png";
+import foodOrder2 from "../../assets/img/foodOrder/2.png";
+import foodOrder3 from "../../assets/img/foodOrder/3.png";
+import foodOrder4 from "../../assets/img/foodOrder/4.png";
+import foodOrder5 from "../../assets/img/foodOrder/5.png";
+import foodOrder6 from "../../assets/img/foodOrder/6.png";
+import foodOrder7 from "../../assets/img/foodOrder/7.png";
 
 import reactImg from "../../assets/img/react-javascript-js-framework-facebook-svgrepo-com.svg";
 
@@ -115,91 +129,79 @@ export const projects = [
 
   {
     id: 2,
-    title: "E-commerce & Freelance",
-    type: "Design & MERN Stack Development",
-    imgUrl: [
-      eCommerce1,
-      eCommerce2,
-      eCommerce3,
-      eCommerce4,
-      eCommerce5,
-      eCommerce6,
-      eCommerce7,
-      eCommerce8,
-      eCommerce9,
-      eCommerce10,
-    ],
+    title: "Explore Place & React Native",
+    type: "Design & Mobile Development",
+    imgUrl: [expPlace1, expPlace2, expPlace3, expPlace4, expPlace5],
     description:
-      "My project is an E-commerce application designed for online shopping. It includes a cart feature where users can add and remove items. Stripe was integrated for credit card processing. The project is built on the MERN (MongoDB, Express.js, React, Node.js) stack, utilizing MongoDB as the database. The admin panel was developed using Ant Design, while the application incorporates charts using the Recharts package for data visualization.",
+      "The mobile application developed with React Native offers category-based venue retrieval and filtering with Google Maps integration, detailed venue pages, and venue sharing. Soon, a feature for adding favorites will also be added.",
     mainlyUsedTechnologies: [
       {
-        name: "React",
-        img: reactImg,
+        name: "React Native",
+        img: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
       },
       {
-        name: "Context",
-        img: "https://miro.medium.com/v2/resize:fit:1000/0*CdSOpVAdLxMvlh7D.png",
+        name: "React Navigation",
+        img: "https://avatars.githubusercontent.com/u/29647600?s=280&v=4",
       },
       {
-        name: "Recharts",
-        img: "https://blog.openreplay.com/images/charting-and-graphing-in-react-with-recharts/images/hero.png",
+        name: "Axios",
+        img: "https://axios-http.com/assets/logo.svg",
       },
       {
-        name: "Antd",
-        img: "https://camo.githubusercontent.com/70ec62b59182d7ecbc34f6cfe6f043d6ca17b133c398871ef1cdab0fa4d1e424/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667",
+        name: "Expo",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeo2BMhXHwShI7vdjOZ8X-LQ7-qL_GuDRQgmn3em9IFA&s",
       },
       {
-        name: "React Router",
-        img: "https://www.svgrepo.com/show/354262/react-router.svg",
-      },
-      {
-        name: "Stripe",
-        img: "https://easydigitaldownloads.com/wp-content/uploads/edd/2019/03/stripe-product-image.png",
-      },
-      {
-        name: "Express",
-        img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA",
-      },
-      {
-        name: "Mongoose",
-        img: "https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png",
+        name: "React Native Maps",
+        img: "https://aboutreact.com/wp-content/uploads/2018/09/react_native_map-1.png",
       },
     ],
   },
 
   {
     id: 3,
-    title: "Fast Pizza & Udemy",
-    type: "Design & Web Development",
+    title: "Food Order && React Native",
+    type: "Design & Mobile Development",
     imgUrl: [
-      fastPizza1,
-      fastPizza2,
-      fastPizza3,
-      fastPizza4,
-      fastPizza5,
-      fastPizza6,
+      foodOrder1,
+      foodOrder2,
+
+      foodOrder3,
+      foodOrder4,
+      foodOrder5,
+      foodOrder6,
+      foodOrder7,
     ],
     description:
-      "I have a project called FastPizza. In this project, users can place pizza orders. Once an order is placed, there's an interface to track the order. Tailwind and Redux were used as tools for this project. Initially, the user encounters a screen to input their name, followed by transitioning to the order process. Geolocation is utilized to determine the user's location while placing an order. Additionally, there's an option to prioritize orders, albeit incurring an extra cost during or after the order placement process.",
+      "The application I developed was created with React Native. Users are greeted with a login screen and then prompted for location permission. The app visually presents restaurants located in hotels and has a detailed design. Details of the restaurants, location information, and menus are easily accessible. Supabase was used as the backend.",
     mainlyUsedTechnologies: [
       {
-        name: "React",
-        img: reactImg,
+        name: "React Native",
+        img: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
+      },
+      {
+        name: "Expo Router",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlAMahS-D-u3BZd15Sj1VZSYvVHQEP-p3MkMrqzib4iA&s",
       },
       {
         name: "Redux",
         img: "https://miro.medium.com/v2/resize:fit:500/1*tOI6UC5EaS2fPItCesI-AQ.png",
       },
       {
-        name: "Tailwind",
-        img: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg",
+        name: "Supabase",
+        img: "https://supabase.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-preview.50e72501.jpg&w=3840&q=75",
       },
       {
-        name: "React Router",
-        img: "https://www.svgrepo.com/show/354262/react-router.svg",
+        name: "Expo",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeo2BMhXHwShI7vdjOZ8X-LQ7-qL_GuDRQgmn3em9IFA&s",
+      },
+      {
+        name: "React Native Maps",
+        img: "https://aboutreact.com/wp-content/uploads/2018/09/react_native_map-1.png",
       },
     ],
   },
+
   {
     id: 4,
     title: "Estate App & Freelance",
@@ -267,40 +269,34 @@ export const projects = [
 
   {
     id: 5,
-    title: "Movie Science",
-    type: "Design & Mobile Development",
+    title: "Fast Pizza & Udemy",
+    type: "Design & Web Development",
     imgUrl: [
-      movieScience1,
-      movieScience2,
-
-      movieScience4,
-      movieScience5,
-      movieScience6,
-      movieScience7,
+      fastPizza1,
+      fastPizza2,
+      fastPizza3,
+      fastPizza4,
+      fastPizza5,
+      fastPizza6,
     ],
     description:
-      "I have a project called Movie Science. In this project, users can view popular movies and their detailed pages. Users can add movies they like to the 'favorites' list. We have the option to add quotes to our favorite movies or view existing quotes. Subsequently, the quotes for these movies are displayed on the application screen, and we can vote on these quotes. The given votes are also displayed on the screen. Flutter was used in this project.",
+      "I have a project called FastPizza. In this project, users can place pizza orders. Once an order is placed, there's an interface to track the order. Tailwind and Redux were used as tools for this project. Initially, the user encounters a screen to input their name, followed by transitioning to the order process. Geolocation is utilized to determine the user's location while placing an order. Additionally, there's an option to prioritize orders, albeit incurring an extra cost during or after the order placement process.",
     mainlyUsedTechnologies: [
       {
-        name: "Flutter",
-        img: "https://w7.pngwing.com/pngs/168/443/png-transparent-flutter-logo-flutter-software-logo-social-media-logo-logo-technology-logo-3d-icon.png",
+        name: "React",
+        img: reactImg,
       },
       {
-        name: "Firebase",
-        img: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
+        name: "Redux",
+        img: "https://miro.medium.com/v2/resize:fit:500/1*tOI6UC5EaS2fPItCesI-AQ.png",
       },
       {
-        name: "Riverpod",
-        img: "https://codeclusive.io/blog/riverpod-state-management/images/riverpod.png",
-      },
-
-      {
-        name: "Http",
-        img: "https://cdn-icons-png.flaticon.com/512/1276/1276471.png",
+        name: "Tailwind",
+        img: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg",
       },
       {
-        name: "Dio",
-        img: "https://protocoderspoint.com/wp-content/uploads/2022/12/flutter-dio.jpg",
+        name: "React Router",
+        img: "https://www.svgrepo.com/show/354262/react-router.svg",
       },
     ],
   },
@@ -344,6 +340,100 @@ export const projects = [
         name: "Lottie",
         img: "https://cdn.iconscout.com/icon/free/png-256/free-lottie-files-3050917-2538296.png",
       },
+      {
+        name: "Http",
+        img: "https://cdn-icons-png.flaticon.com/512/1276/1276471.png",
+      },
+      {
+        name: "Dio",
+        img: "https://protocoderspoint.com/wp-content/uploads/2022/12/flutter-dio.jpg",
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    title: "E-commerce & Freelance",
+    type: "Design & MERN Stack Development",
+    imgUrl: [
+      eCommerce1,
+      eCommerce2,
+      eCommerce3,
+      eCommerce4,
+      eCommerce5,
+      eCommerce6,
+      eCommerce7,
+      eCommerce8,
+      eCommerce9,
+      eCommerce10,
+    ],
+    description:
+      "My project is an E-commerce application designed for online shopping. It includes a cart feature where users can add and remove items. Stripe was integrated for credit card processing. The project is built on the MERN (MongoDB, Express.js, React, Node.js) stack, utilizing MongoDB as the database. The admin panel was developed using Ant Design, while the application incorporates charts using the Recharts package for data visualization.",
+    mainlyUsedTechnologies: [
+      {
+        name: "React",
+        img: reactImg,
+      },
+      {
+        name: "Context",
+        img: "https://miro.medium.com/v2/resize:fit:1000/0*CdSOpVAdLxMvlh7D.png",
+      },
+      {
+        name: "Recharts",
+        img: "https://blog.openreplay.com/images/charting-and-graphing-in-react-with-recharts/images/hero.png",
+      },
+      {
+        name: "Antd",
+        img: "https://camo.githubusercontent.com/70ec62b59182d7ecbc34f6cfe6f043d6ca17b133c398871ef1cdab0fa4d1e424/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667",
+      },
+      {
+        name: "React Router",
+        img: "https://www.svgrepo.com/show/354262/react-router.svg",
+      },
+      {
+        name: "Stripe",
+        img: "https://easydigitaldownloads.com/wp-content/uploads/edd/2019/03/stripe-product-image.png",
+      },
+      {
+        name: "Express",
+        img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA",
+      },
+      {
+        name: "Mongoose",
+        img: "https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png",
+      },
+    ],
+  },
+
+  {
+    id: 8,
+    title: "Movie Science",
+    type: "Design & Mobile Development",
+    imgUrl: [
+      movieScience1,
+      movieScience2,
+
+      movieScience4,
+      movieScience5,
+      movieScience6,
+      movieScience7,
+    ],
+    description:
+      "I have a project called Movie Science. In this project, users can view popular movies and their detailed pages. Users can add movies they like to the 'favorites' list. We have the option to add quotes to our favorite movies or view existing quotes. Subsequently, the quotes for these movies are displayed on the application screen, and we can vote on these quotes. The given votes are also displayed on the screen. Flutter was used in this project.",
+    mainlyUsedTechnologies: [
+      {
+        name: "Flutter",
+        img: "https://w7.pngwing.com/pngs/168/443/png-transparent-flutter-logo-flutter-software-logo-social-media-logo-logo-technology-logo-3d-icon.png",
+      },
+      {
+        name: "Firebase",
+        img: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
+      },
+      {
+        name: "Riverpod",
+        img: "https://codeclusive.io/blog/riverpod-state-management/images/riverpod.png",
+      },
+
       {
         name: "Http",
         img: "https://cdn-icons-png.flaticon.com/512/1276/1276471.png",
