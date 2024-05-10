@@ -19,8 +19,8 @@ function Skills() {
     },
     {
       svgText: "React Native",
-      deg: "%51",
-      degValue: 0.51,
+      deg: "%47",
+      degValue: 0.47,
     },
     {
       svgText: "Javascript",
