@@ -5,7 +5,7 @@ import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import { Col, Container, Row } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { MainlyUsedTech } from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -15,12 +15,21 @@ import "swiper/css/scrollbar";
 import { EffectCoverflow } from "swiper/modules";
 
 import "swiper/css";
+import { projects } from "../ProjectData/ProjectData";
 
 function ProjectsDetail() {
   const location = useLocation();
+  const { id } = useParams();
 
-  const { propCard } = location.state;
-  const { title, description, mainlyUsedTechnologies, imgUrl } = propCard;
+  const state = location.state as
+    | {
+        propCard?: (typeof projects)[number];
+      }
+    | undefined;
+
+  const projectId = Number(id);
+  const propCard =
+    projects.find((project) => project.id === projectId) ?? state?.propCard;
 
   useEffect(() => {
     const projectSection = document.getElementById("project");
@@ -28,6 +37,33 @@ function ProjectsDetail() {
       projectSection.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
+
+  if (!propCard) {
+    return (
+      <>
+        <CustomNavBar isDetail />
+        <section className="projectDetail" id="project">
+          <Container>
+            <Row>
+              <Col sm={12} className="text-center">
+                <h2>Project not found</h2>
+                <p className="text-center">
+                  The project you are looking for does not exist or has been
+                  moved.
+                </p>
+                <Link className="detail-back-link" to="/">
+                  Back to portfolio
+                </Link>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+        <Footer />
+      </>
+    );
+  }
+
+  const { title, description, mainlyUsedTechnologies, imgUrl } = propCard;
 
   return (
     <>
@@ -39,7 +75,7 @@ function ProjectsDetail() {
           <Row className="row-gap-3">
             <Col sm={12}>
               <h2>{title}</h2>
-              <p>{description}</p>
+              <p className="project-description">{description}</p>
             </Col>
 
             <Col sm={12}>

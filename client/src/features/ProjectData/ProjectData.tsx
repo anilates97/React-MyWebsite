@@ -75,6 +75,12 @@ import foodOrder7 from "../../assets/img/foodOrder/7.png";
 
 import reactImg from "../../assets/img/react-javascript-js-framework-facebook-svgrepo-com.svg";
 
+const axiosIcon =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 96'%3E%3Crect width='160' height='96' rx='14' fill='%23f3f0e8'/%3E%3Cpath d='M55 24 32 72h14l4-10h21l4 10h15L67 24H55Zm-1 28 7-16 7 16H54Zm45-28h16L94 72H78l21-48Zm19 0h14l-21 48H97l21-48Z' fill='%2354c7ec'/%3E%3C/svg%3E";
+
+const formikIcon =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 96'%3E%3Crect width='160' height='96' rx='14' fill='%23f3f0e8'/%3E%3Cpath d='M44 24h72v14H61v13h44v13H61v8H44V24Z' fill='%2354c7ec'/%3E%3Ccircle cx='115' cy='70' r='8' fill='%23050609'/%3E%3C/svg%3E";
+
 export const projects = [
   {
     id: 1,
@@ -93,8 +99,14 @@ export const projects = [
       adoBilet9,
       adoBilet10,
     ],
-    description:
-      "As a team, I spearheaded the entire backend, admin panel, and a significant portion of the frontend within our developed platform. This platform offers filtering options based on date, event name, and location, allowing users to browse through events. Additionally, users can access past events, share events, and utilize Google Maps integration to visualize event locations on a map. One of the most challenging aspects of this project was the development of the admin panel.",
+    description: `Developed as a collaborative full stack project during a mid-level bootcamp experience.
+Focused primarily on backend development, admin panel functionality and frontend feature implementation.
+
+- Event filtering by date, category and location
+- Google Maps integration
+- Admin panel management
+- Social sharing functionality
+- Responsive user interface design`,
     mainlyUsedTechnologies: [
       {
         name: "React",
@@ -106,11 +118,11 @@ export const projects = [
       },
       {
         name: "Axios",
-        img: "https://axios-http.com/assets/logo.svg",
+        img: axiosIcon,
       },
       {
         name: "Formik",
-        img: "https://static-00.iconduck.com/assets.00/formik-icon-1024x1024-deyd4zqw.png",
+        img: formikIcon,
       },
       {
         name: "React Router",
@@ -145,7 +157,7 @@ export const projects = [
       },
       {
         name: "Axios",
-        img: "https://axios-http.com/assets/logo.svg",
+        img: axiosIcon,
       },
       {
         name: "Expo",
@@ -238,7 +250,7 @@ export const projects = [
       },
       {
         name: "Axios",
-        img: "https://axios-http.com/assets/logo.svg",
+        img: axiosIcon,
       },
       {
         name: "Auth0",

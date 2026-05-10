@@ -1,152 +1,113 @@
-# My Portfolio Website
+# React My Website
 
-This is my personal portfolio website built with React to showcase my software development projects, technical skills and development experience.
+Personal portfolio website built with React, TypeScript, Vite, Bootstrap and a
+small Vercel serverless contact endpoint.
 
-The website includes information about my ASP.NET Core MVC, React and mobile application projects while providing a modern and responsive user experience.
+Live demo: https://anilates.vercel.app/
 
-The project focuses on frontend architecture, responsive UI development and clean portfolio presentation.
+## Features
 
----
+- Responsive portfolio landing page
+- Skills and technologies section
+- Project showcase with detail pages
+- Image carousel for project screenshots
+- Contact form connected to a mail endpoint
+- Vercel-ready client and server structure
 
-# Project Overview
+## Tech Stack
 
-The main goal of this project is to create a modern developer portfolio website that highlights my projects, technologies and software development background.
+### Client
 
-The website is designed with a responsive layout and component-based architecture to provide a clean and professional user experience across different devices.
-
----
-
-# Key Features
-
-- Modern React-based portfolio website
-- Responsive UI design
-- Project showcase sections
-- Technology and skills presentation
-- Mobile-friendly layouts
-- Component-based architecture
-- Clean and modern interface
-- Dynamic navigation structure
-- Personal branding focused design
-
----
-
-# Technologies Used
-
-## Frontend
-- React
+- React 18
 - TypeScript
-- JavaScript
-- HTML5
-- CSS3
-- Tailwind CSS
+- Vite
+- React Bootstrap
+- React Router
+- Swiper
+- Lottie React
 
-## Architecture & Development
-- Component-Based Architecture
-- Responsive Design
+### Server
 
-## Tools
-- Git
-- GitHub
-- Vercel
+- Vercel serverless function
+- Node.js
+- Nodemailer
+- CORS
 
----
-
-# Project Structure
+## Project Structure
 
 ```text
 React-MyWebsite/
-├── components/
-├── pages/
-├── assets/
-├── styles/
-├── hooks/
-├── utils/
-└── App.tsx
+├── client/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── features/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   ├── package.json
+│   └── vite.config.ts
+├── server/
+│   ├── index.js
+│   ├── package.json
+│   └── vercel.json
+└── README.md
 ```
 
----
+## Getting Started
 
-# Main Sections
-
-The website includes several main sections:
-
-- About Me
-- Projects Showcase
-- Skills & Technologies
-- Contact Information
-- Responsive Navigation
-- Portfolio Presentation
-
----
-
-# Architecture
-
-The project follows a modular React architecture.
-
-- Components are separated into reusable UI structures
-- Tailwind CSS is used for responsive styling
-- The application uses a clean frontend structure
-- Responsive layouts improve usability across devices
-
-This structure improves maintainability and scalability.
-
----
-
-# Live Demo
-
-- Portfolio Website: https://anilates.vercel.app/
-
----
-
-# Installation
-
-## 1. Clone the Repository
+Install and run the client:
 
 ```bash
-git clone https://github.com/anilates97/React-MyWebsite.git
-```
-
----
-
-## 2. Navigate to the Project Folder
-
-```bash
-cd React-MyWebsite
-```
-
----
-
-## 3. Install Dependencies
-
-```bash
+cd client
 npm install
-```
-
----
-
-## 4. Start the Development Server
-
-```bash
 npm run dev
 ```
 
----
+Install the server dependencies:
 
-# Future Improvements
+```bash
+cd server
+npm install
+```
 
-- Dark mode support
-- Blog integration
-- Project filtering system
-- Multi-language support
-- Animation improvements
-- Advanced contact form integration
-- Improved accessibility support
+## Environment Variables
 
----
+Client:
 
-# Developer
+```bash
+VITE_CONTACT_API_URL=https://your-contact-endpoint.vercel.app
+```
 
-Anıl Hasan Ateş
+Server:
+
+```bash
+EMAIL_USERNAME=your-gmail-address
+EMAIL_PASSWORD=your-gmail-app-password
+CONTACT_RECEIVER_EMAIL=receiver-address
+```
+
+`CONTACT_RECEIVER_EMAIL` is optional. If it is not set, the server sends mail to
+`EMAIL_USERNAME`.
+
+## Scripts
+
+Client:
+
+```bash
+npm run dev
+npm run build
+npm run lint
+npm run preview
+```
+
+Server:
+
+```bash
+npm start
+```
+
+## Developer
+
+Anil Hasan Ates
 
 - LinkedIn: https://linkedin.com/in/anilates97
 - GitHub: https://github.com/anilates97

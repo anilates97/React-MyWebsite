@@ -36,7 +36,9 @@ function ProjectCard({
   return (
     <Col sm={12} md={6} lg={4}>
       <button
+        type="button"
         className="proj-imgbx"
+        aria-label={`View ${title} project details`}
         onClick={() =>
           navigate(`/projectDetail/${id}`, {
             replace: true,
@@ -44,7 +46,7 @@ function ProjectCard({
           })
         }
       >
-        <img src={imgUrl[0]} alt="" />
+        <img src={imgUrl[0]} alt={`${title} preview`} />
         <div className="proj-txtx">
           <h4 className="text-xs">{title}</h4>
           <span>{type}</span>

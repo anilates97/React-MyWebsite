@@ -16,14 +16,20 @@ type CustomNavBarProps = {
 function CustomNavBar({ isDetail }: CustomNavBarProps) {
   const [activeLink, setActiveLink] = useState("home");
   const location = useLocation();
-  const state = location.state;
+  const state = location.state as
+    | {
+        isDetailToHome?: boolean;
+        isDetailToSkills?: boolean;
+        isDetailToProjects?: boolean;
+      }
+    | undefined;
 
   const [scrolled, setScrolled] = useState(
     isDetail
       ? true
       : state?.isDetailToHome
       ? true
-      : state?.isisDetailToSkills
+      : state?.isDetailToSkills
       ? true
       : state?.isDetailToProjects
       ? true
@@ -73,7 +79,9 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
         <Link
           className="navbar-brand"
           to="home"
-          onClick={() => (isDetail ? navigate("/") : null)}
+          onClick={() => {
+            if (isDetail) navigate("/");
+          }}
         >
           <img src={logo} alt="Logo" width={100} />
         </Link>
@@ -92,7 +100,6 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
               onClick={() => {
                 onUpdateActiveLink("home");
                 if (isDetail) navigate("/");
-                else null;
               }}
             >
               Home
@@ -108,7 +115,6 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
               onClick={() => {
                 onUpdateActiveLink("skills");
                 if (isDetail) handleClickSkills();
-                else return;
               }}
             >
               Skills
@@ -124,7 +130,6 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
               onClick={() => {
                 onUpdateActiveLink("projects");
                 if (isDetail) handleClickProject();
-                else return;
               }}
             >
               Projects
@@ -133,10 +138,10 @@ function CustomNavBar({ isDetail }: CustomNavBarProps) {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/anilates97/">
-                <img src={navIcon1} alt="" />{" "}
+                <img src={navIcon1} alt="LinkedIn" />{" "}
               </a>
               <a href="https://github.com/anilates97">
-                <img src={navIcon2} alt="" />{" "}
+                <img src={navIcon2} alt="GitHub" />{" "}
               </a>
             </div>
           </span>
