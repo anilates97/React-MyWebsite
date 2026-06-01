@@ -1,3 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "anilates.vercel.app" }],
+      "destination": "https://atesdev.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
