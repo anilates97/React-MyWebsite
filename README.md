@@ -1,4 +1,4 @@
-# React My Website
+# Anıl Ateş Portfolio
 
 Personal portfolio website built with React, TypeScript, Vite, Bootstrap and a
 small Vercel serverless contact endpoint.
@@ -23,8 +23,8 @@ Live demo: https://anilates.vercel.app/
 - Vite
 - React Bootstrap
 - React Router
-- Swiper
-- Lottie React
+- React Scroll
+- Bootstrap Icons
 
 ### Server
 
@@ -83,10 +83,21 @@ Server:
 EMAIL_USERNAME=your-gmail-address
 EMAIL_PASSWORD=your-gmail-app-password
 CONTACT_RECEIVER_EMAIL=receiver-address
+CORS_ORIGIN=https://your-domain.com
 ```
 
 `CONTACT_RECEIVER_EMAIL` is optional. If it is not set, the server sends mail to
 `EMAIL_USERNAME`.
+`CORS_ORIGIN` is optional during development. In production, set it to the public
+site domain. Multiple origins can be separated with commas.
+
+## Deployment Checklist
+
+- Deploy `client/` as the frontend project and set the custom domain there.
+- Deploy `server/` as the contact endpoint project.
+- Set `VITE_CONTACT_API_URL` in the client to the deployed server URL.
+- Set the server email variables and `CORS_ORIGIN` before going live.
+- Run `npm run build` inside `client/` before publishing changes.
 
 ## Scripts
 

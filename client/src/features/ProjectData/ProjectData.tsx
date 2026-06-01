@@ -1,17 +1,9 @@
-import React from "react";
 import movieScience1 from "../../assets/img/MovieScience/1.png";
 import movieScience2 from "../../assets/img/MovieScience/2.png";
-
+import movieScience3 from "../../assets/img/MovieScience/3.png";
 import movieScience4 from "../../assets/img/MovieScience/4.png";
 import movieScience5 from "../../assets/img/MovieScience/5.png";
 import movieScience6 from "../../assets/img/MovieScience/6.png";
-import movieScience7 from "../../assets/img/MovieScience/222.png";
-
-import expPlace1 from "../../assets/img/explore-place/1.png";
-import expPlace2 from "../../assets/img/explore-place/2.png";
-import expPlace3 from "../../assets/img/explore-place/3.png";
-import expPlace4 from "../../assets/img/explore-place/4.png";
-import expPlace5 from "../../assets/img/explore-place/5.png";
 
 import projBitirme1 from "../../assets/img/bitirmeP/1.png";
 import projBitirme2 from "../../assets/img/bitirmeP/2.png";
@@ -24,38 +16,35 @@ import projBitirme8 from "../../assets/img/bitirmeP/8.png";
 import projBitirme9 from "../../assets/img/bitirmeP/9.png";
 import projBitirme10 from "../../assets/img/bitirmeP/10.png";
 
-import adoBilet from "../../assets/img/adoBilet/AdoBilet.png";
-
-import adoBilet1 from "../../assets/img/adoBilet/1.png";
+import adoBilet1 from "../../assets/img/adoBilet/showcase.png";
 import adoBilet2 from "../../assets/img/adoBilet/2.png";
-
 import adoBilet3 from "../../assets/img/adoBilet/3.png";
 import adoBilet4 from "../../assets/img/adoBilet/4.png";
-
+import adoBilet5 from "../../assets/img/adoBilet/5.png";
 import adoBilet6 from "../../assets/img/adoBilet/6.png";
 import adoBilet7 from "../../assets/img/adoBilet/7.png";
 import adoBilet8 from "../../assets/img/adoBilet/8.png";
 import adoBilet9 from "../../assets/img/adoBilet/9.png";
 import adoBilet10 from "../../assets/img/adoBilet/10.png";
 
-import eCommerce1 from "../../assets/img/E-commerce/1.png";
-import eCommerce2 from "../../assets/img/E-commerce/2.png";
-import eCommerce3 from "../../assets/img/E-commerce/3.png";
-import eCommerce4 from "../../assets/img/E-commerce/4.png";
-import eCommerce5 from "../../assets/img/E-commerce/5.png";
-import eCommerce6 from "../../assets/img/E-commerce/6.png";
-import eCommerce7 from "../../assets/img/E-commerce/7.png";
-import eCommerce8 from "../../assets/img/E-commerce/8.png";
-import eCommerce9 from "../../assets/img/E-commerce/9.png";
-import eCommerce10 from "../../assets/img/E-commerce/10.png";
-import fastPizza1 from "../../assets/img/fastPizzaUdemy/1.png";
-import fastPizza2 from "../../assets/img/fastPizzaUdemy/2.png";
-import fastPizza3 from "../../assets/img/fastPizzaUdemy/3.png";
-import fastPizza4 from "../../assets/img/fastPizzaUdemy/4.png";
-import fastPizza5 from "../../assets/img/fastPizzaUdemy/5.png";
-import fastPizza6 from "../../assets/img/fastPizzaUdemy/6.png";
+import financeCase1 from "../../assets/img/FinanceCase/showcase.png";
+import financeCase2 from "../../assets/img/FinanceCase/2.png";
+import financeCase3 from "../../assets/img/FinanceCase/3.png";
+import financeCase4 from "../../assets/img/FinanceCase/4.png";
 
-import estate1 from "../../assets/img/estate/1.png";
+import logisticCms1 from "../../assets/img/LogisticCMS/showcase.png";
+import logisticCms2 from "../../assets/img/LogisticCMS/2.png";
+import logisticCms3 from "../../assets/img/LogisticCMS/3.png";
+import logisticCms4 from "../../assets/img/LogisticCMS/4.png";
+import logisticCms5 from "../../assets/img/LogisticCMS/5.png";
+import logisticCms6 from "../../assets/img/LogisticCMS/6.png";
+import logisticCms7 from "../../assets/img/LogisticCMS/7.png";
+import logisticCms8 from "../../assets/img/LogisticCMS/8.png";
+import logisticCms9 from "../../assets/img/LogisticCMS/9.png";
+import logisticCms10 from "../../assets/img/LogisticCMS/10.png";
+
+
+import estate1 from "../../assets/img/estate/showcase.png";
 import estate2 from "../../assets/img/estate/2.png";
 import estate3 from "../../assets/img/estate/3.png";
 import estate4 from "../../assets/img/estate/4.png";
@@ -65,159 +54,160 @@ import estate7 from "../../assets/img/estate/7.png";
 import estate8 from "../../assets/img/estate/8.png";
 import estate9 from "../../assets/img/estate/9.png";
 
-import foodOrder1 from "../../assets/img/foodOrder/1.png";
-import foodOrder2 from "../../assets/img/foodOrder/2.png";
-import foodOrder3 from "../../assets/img/foodOrder/3.png";
-import foodOrder4 from "../../assets/img/foodOrder/4.png";
-import foodOrder5 from "../../assets/img/foodOrder/5.png";
-import foodOrder6 from "../../assets/img/foodOrder/6.png";
-import foodOrder7 from "../../assets/img/foodOrder/7.png";
 
-import reactImg from "../../assets/img/react-javascript-js-framework-facebook-svgrepo-com.svg";
+import blogApp1 from "../../assets/img/BlogApp/showcase.png";
+import blogApp2 from "../../assets/img/BlogApp/2.png";
+import blogApp3 from "../../assets/img/BlogApp/3.png";
+import blogApp4 from "../../assets/img/BlogApp/4.png";
+import blogApp5 from "../../assets/img/BlogApp/5.png";
+import blogApp6 from "../../assets/img/BlogApp/6.png";
+import blogApp7 from "../../assets/img/BlogApp/7.png";
+import blogApp8 from "../../assets/img/BlogApp/8.png";
+import blogApp9 from "../../assets/img/BlogApp/9.png";
 
-const axiosIcon =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 96'%3E%3Crect width='160' height='96' rx='14' fill='%23f3f0e8'/%3E%3Cpath d='M55 24 32 72h14l4-10h21l4 10h15L67 24H55Zm-1 28 7-16 7 16H54Zm45-28h16L94 72H78l21-48Zm19 0h14l-21 48H97l21-48Z' fill='%2354c7ec'/%3E%3C/svg%3E";
+import financeCaseCover from "../../assets/img/FinanceCase/financecase-cover.png";
+import logisticCmsCover from "../../assets/img/LogisticCMS/lojisticcms-cover.png";
+import blogAppCover from "../../assets/img/BlogApp/blogapp-cover.png";
+import adoBiletCover from "../../assets/img/adoBilet/adobilet-cover.png";
+import estateCover from "../../assets/img/estate/nivoemlak-cover.png";
+import rafyaCover from "../../assets/img/bitirmeP/rafya-cover.png";
+import movieScienceCover from "../../assets/img/MovieScience/filmscience-cover.png";
 
-const formikIcon =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 96'%3E%3Crect width='160' height='96' rx='14' fill='%23f3f0e8'/%3E%3Cpath d='M44 24h72v14H61v13h44v13H61v8H44V24Z' fill='%2354c7ec'/%3E%3Ccircle cx='115' cy='70' r='8' fill='%23050609'/%3E%3C/svg%3E";
+const simpleIcon = (slug: string, color = "54C7EC") =>
+  `https://cdn.simpleicons.org/${slug}/${color}`;
+
+// Unified monochrome SVG badge for techs without an official SimpleIcons logo.
+// Designed to live INSIDE the .tech-icon container (which already provides the
+// dark fill + accent border), so the badge itself is transparent — just the
+// glyph. Glyphs fill ~85% of the 64×64 viewBox so they read at 24px display,
+// and combine a 3.2 stroke with selective semi-transparent accent fills for
+// the same visual weight as the SimpleIcons logos sitting next to them.
+const monoIcon = (innerSvg: string) =>
+  `data:image/svg+xml,${encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><g fill="none" stroke="#54C7EC" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">${innerSvg}</g></svg>`
+  )}`;
+
+const techIcons = {
+  // Two filled records connected by a directed arrow — AutoMapper.
+  automapper: monoIcon(
+    '<circle cx="14" cy="32" r="7" fill="rgba(84,199,236,0.2)"/><circle cx="50" cy="32" r="7" fill="rgba(84,199,236,0.2)"/><path d="M22 32h20"/><path d="M37 26l6 6-6 6"/>'
+  ),
+  bootstrap: simpleIcon("bootstrap"),
+  chartjs: simpleIcon("chartdotjs"),
+  // Shield with check — protected session / cookie auth.
+  cookieAuth: monoIcon(
+    '<path d="M32 6l22 8v16c0 14-10 25-22 28-12-3-22-14-22-28V14z" fill="rgba(84,199,236,0.16)"/><path d="M22 32l8 8 14-14"/>'
+  ),
+  // Stylized "C#" letterform — SimpleIcons removed the Microsoft brand icon.
+  csharp: monoIcon(
+    '<text x="32" y="44" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="800" fill="#54C7EC" stroke="none">C#</text>'
+  ),
+  dart: simpleIcon("dart"),
+  // Three connected nodes — simplified network for clear 24px reading.
+  dio: monoIcon(
+    '<circle cx="18" cy="18" r="7" fill="rgba(84,199,236,0.22)"/><circle cx="46" cy="18" r="7" fill="rgba(84,199,236,0.22)"/><circle cx="32" cy="48" r="7" fill="rgba(84,199,236,0.22)"/><path d="M25 18h14"/><path d="M22 25l8 18"/><path d="M42 25l-8 18"/>'
+  ),
+  dotnet: simpleIcon("dotnet"),
+  // Database cylinder with internal layers — EF Core / ORM.
+  efCore: monoIcon(
+    '<path d="M12 14a20 6 0 0 1 40 0v36a20 6 0 0 1-40 0z" fill="rgba(84,199,236,0.16)"/><ellipse cx="32" cy="14" rx="20" ry="6"/><path d="M12 28a20 6 0 0 0 40 0"/><path d="M12 42a20 6 0 0 0 40 0"/>'
+  ),
+  express: simpleIcon("express"),
+  firebase: simpleIcon("firebase"),
+  flutter: simpleIcon("flutter"),
+  formik: simpleIcon("formik"),
+  // Closed book with spine + 2 spaced text lines — clearer at 24px.
+  googleBooks: monoIcon(
+    '<rect x="10" y="8" width="44" height="48" rx="3" fill="rgba(84,199,236,0.14)"/><path d="M20 8v48"/><path d="M28 24h18M28 38h14"/>'
+  ),
+  googleMaps: simpleIcon("googlemaps"),
+  // Clock — scheduled / recurring job (Hangfire).
+  hangfire: monoIcon(
+    '<circle cx="32" cy="32" r="24" fill="rgba(84,199,236,0.14)"/><path d="M32 16v16l11 7"/>'
+  ),
+  // Globe with meridian + equator — HTTP / network.
+  http: monoIcon(
+    '<circle cx="32" cy="32" r="24" fill="rgba(84,199,236,0.12)"/><ellipse cx="32" cy="32" rx="24" ry="10"/><path d="M32 8v48"/>'
+  ),
+  javascript: simpleIcon("javascript"),
+  jwt: simpleIcon("jsonwebtokens"),
+  leaflet: simpleIcon("leaflet"),
+  lottie: simpleIcon("lottiefiles"),
+  mantine: simpleIcon("mantine"),
+  material: simpleIcon("materialdesign"),
+  mongodb: simpleIcon("mongodb"),
+  // Spreadsheet grid — Excel / NPOI.
+  npoi: monoIcon(
+    '<rect x="8" y="12" width="48" height="40" rx="3" fill="rgba(84,199,236,0.14)"/><path d="M8 24h48M8 36h48M22 12v40M40 12v40"/>'
+  ),
+  // Open book (V shape, two pages) — OpenLibrary.
+  openLibrary: monoIcon(
+    '<path d="M6 14c8-4 18-4 26 2v40c-8-6-18-6-26-2z" fill="rgba(84,199,236,0.14)"/><path d="M58 14c-8-4-18-4-26 2v40c8-6 18-6 26-2z" fill="rgba(84,199,236,0.14)"/>'
+  ),
+  prisma: simpleIcon("prisma"),
+  // Document with code brackets — Razor View.
+  razor: monoIcon(
+    '<path d="M14 6h22l14 14v36a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4z" fill="rgba(84,199,236,0.14)"/><path d="M36 6v14h14"/><path d="M22 38l-4 4 4 4"/><path d="M40 38l4 4-4 4"/><path d="M35 36l-4 12"/>'
+  ),
+  react: simpleIcon("react"),
+  reactQuery: simpleIcon("reactquery"),
+  reactRouter: simpleIcon("reactrouter"),
+  redux: simpleIcon("redux"),
+  // Water drop with inner ripple — Riverpod.
+  riverpod: monoIcon(
+    '<path d="M32 6c-10 14-16 22-16 32a16 16 0 0 0 32 0c0-10-6-18-16-32z" fill="rgba(84,199,236,0.18)"/><path d="M24 38a8 8 0 0 0 8 8"/>'
+  ),
+  // Database cylinder with stored-records dots — SimpleIcons removed the
+  // Microsoft SQL Server brand icon. Kept visually distinct from EF Core.
+  sqlServer: monoIcon(
+    '<path d="M12 14a20 6 0 0 1 40 0v36a20 6 0 0 1-40 0z" fill="rgba(84,199,236,0.16)"/><ellipse cx="32" cy="14" rx="20" ry="6"/><path d="M12 32a20 6 0 0 0 40 0"/><circle cx="22" cy="22" r="1.8" fill="#54C7EC" stroke="none"/><circle cx="32" cy="22" r="1.8" fill="#54C7EC" stroke="none"/><circle cx="42" cy="22" r="1.8" fill="#54C7EC" stroke="none"/><circle cx="22" cy="40" r="1.8" fill="#54C7EC" stroke="none"/><circle cx="32" cy="40" r="1.8" fill="#54C7EC" stroke="none"/><circle cx="42" cy="40" r="1.8" fill="#54C7EC" stroke="none"/>'
+  ),
+  sqlite: simpleIcon("sqlite"),
+  supabase: simpleIcon("supabase"),
+  swiper: simpleIcon("swiper"),
+  tailwind: simpleIcon("tailwindcss"),
+  // Film strip with play triangle — TMDB.
+  tmdb: monoIcon(
+    '<rect x="8" y="14" width="48" height="36" rx="3" fill="rgba(84,199,236,0.12)"/><path d="M26 22l16 10-16 10z" fill="rgba(84,199,236,0.45)"/>'
+  ),
+  typescript: simpleIcon("typescript"),
+};
 
 export const projects = [
   {
     id: 1,
-    title: "AdoBilet & Midlevel Bootcamp",
-    type: "Design & Full Stack Web Development",
-    imgUrl: [
-      adoBilet,
-      adoBilet1,
-      adoBilet2,
-
-      adoBilet3,
-      adoBilet4,
-      adoBilet6,
-      adoBilet7,
-      adoBilet8,
-      adoBilet9,
-      adoBilet10,
-    ],
-    description: `Developed as a collaborative full stack project during a mid-level bootcamp experience.
-Focused primarily on backend development, admin panel functionality and frontend feature implementation.
-
-- Event filtering by date, category and location
-- Google Maps integration
-- Admin panel management
-- Social sharing functionality
-- Responsive user interface design`,
+    title: "FinanceCase",
+    type: "ASP.NET Core MVC — Financial Reporting",
+    category: "BACKEND",
+    cardHoverTechs: ["C#", "SQL Server", "Hangfire"],
+    accent: "#54c7ec",
+    cardImage: financeCaseCover,
+    githubUrl: "https://github.com/anilates97/FinanceCase",
+    liveUrl: "",
+    imgUrl: [financeCase1, financeCase2, financeCase3, financeCase4],
+    description:
+      "FinanceCase is a financial reporting tool that imports asset and inflation data from Excel files, syncs USD exchange rates and generates dollarization/inflation reports. The backend is ASP.NET Core MVC with Entity Framework Core and SQL Server, and a small Web API exposes the latest rates for external use.",
     mainlyUsedTechnologies: [
-      {
-        name: "React",
-        img: reactImg,
-      },
-      {
-        name: "Redux",
-        img: "https://miro.medium.com/v2/resize:fit:500/1*tOI6UC5EaS2fPItCesI-AQ.png",
-      },
-      {
-        name: "Axios",
-        img: axiosIcon,
-      },
-      {
-        name: "Formik",
-        img: formikIcon,
-      },
-      {
-        name: "React Router",
-        img: "https://www.svgrepo.com/show/354262/react-router.svg",
-      },
-      {
-        name: "Tailwind",
-        img: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg",
-      },
-      {
-        name: "GMaps",
-        img: "https://e7.pngegg.com/pngimages/27/774/png-clipart-google-maps-google-i-o-logo-map-icon-google-map-logo-text-sign.png",
-      },
+      { name: "ASP.NET Core MVC", img: techIcons.dotnet },
+      { name: "ASP.NET Core Web API", img: techIcons.dotnet },
+      { name: "C#", img: techIcons.csharp },
+      { name: "Entity Framework Core", img: techIcons.efCore },
+      { name: "SQL Server", img: techIcons.sqlServer },
+      { name: "Hangfire", img: techIcons.hangfire },
+      { name: "NPOI", img: techIcons.npoi },
+      { name: "Chart.js", img: techIcons.chartjs },
     ],
   },
-
   {
     id: 2,
-    title: "Explore Place & React Native",
-    type: "Design & Mobile Development",
-    imgUrl: [expPlace1, expPlace2, expPlace3, expPlace4, expPlace5],
-    description:
-      "The mobile application developed with React Native offers category-based venue retrieval and filtering with Google Maps integration, detailed venue pages, and venue sharing. Soon, a feature for adding favorites will also be added.",
-    mainlyUsedTechnologies: [
-      {
-        name: "React Native",
-        img: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
-      },
-      {
-        name: "React Navigation",
-        img: "https://avatars.githubusercontent.com/u/29647600?s=280&v=4",
-      },
-      {
-        name: "Axios",
-        img: axiosIcon,
-      },
-      {
-        name: "Expo",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeo2BMhXHwShI7vdjOZ8X-LQ7-qL_GuDRQgmn3em9IFA&s",
-      },
-      {
-        name: "React Native Maps",
-        img: "https://aboutreact.com/wp-content/uploads/2018/09/react_native_map-1.png",
-      },
-    ],
-  },
-
-  {
-    id: 3,
-    title: "Food Order && React Native",
-    type: "Design & Mobile Development",
-    imgUrl: [
-      foodOrder1,
-      foodOrder2,
-
-      foodOrder3,
-      foodOrder4,
-      foodOrder5,
-      foodOrder6,
-      foodOrder7,
-    ],
-    description:
-      "The application I developed was created with React Native. Users are greeted with a login screen and then prompted for location permission. The app visually presents restaurants located in hotels and has a detailed design. Details of the restaurants, location information, and menus are easily accessible. Supabase was used as the backend.",
-    mainlyUsedTechnologies: [
-      {
-        name: "React Native",
-        img: "https://cdn.worldvectorlogo.com/logos/react-native-1.svg",
-      },
-      {
-        name: "Expo Router",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlAMahS-D-u3BZd15Sj1VZSYvVHQEP-p3MkMrqzib4iA&s",
-      },
-      {
-        name: "Redux",
-        img: "https://miro.medium.com/v2/resize:fit:500/1*tOI6UC5EaS2fPItCesI-AQ.png",
-      },
-      {
-        name: "Supabase",
-        img: "https://supabase.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-preview.50e72501.jpg&w=3840&q=75",
-      },
-      {
-        name: "Expo",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeo2BMhXHwShI7vdjOZ8X-LQ7-qL_GuDRQgmn3em9IFA&s",
-      },
-      {
-        name: "React Native Maps",
-        img: "https://aboutreact.com/wp-content/uploads/2018/09/react_native_map-1.png",
-      },
-    ],
-  },
-
-  {
-    id: 4,
-    title: "Estate App & Freelance",
-    type: "Design & Web Development",
+    title: "Nivo Emlak",
+    type: "React + Node.js — Real Estate Platform",
+    category: "FULL-STACK",
+    cardHoverTechs: ["TypeScript", "Prisma", "Leaflet"],
+    accent: "#a3c9a8",
+    cardImage: estateCover,
+    githubUrl: "https://github.com/anilates97/React-EmlakFullStack",
+    liveUrl: "",
     imgUrl: [
       estate1,
       estate2,
@@ -230,93 +220,133 @@ Focused primarily on backend development, admin panel functionality and frontend
       estate9,
     ],
     description:
-      "I developed a mobile-responsive real estate application using React. I integrated Auth0 and Leaflet for authentication and map functionality. Users can make reservations, create favorite lists, and view/search residences based on their locations.",
+      "Nivo Emlak is a full-stack real estate platform for browsing, saving and scheduling visits on Turkish property listings. The frontend is React with TypeScript; the Express API uses Prisma over MongoDB with JWT auth, and Leaflet powers the map on detail pages.",
     mainlyUsedTechnologies: [
-      {
-        name: "Typescript",
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
-      },
-      {
-        name: "React",
-        img: reactImg,
-      },
-      {
-        name: "Context",
-        img: "https://miro.medium.com/v2/resize:fit:1000/0*CdSOpVAdLxMvlh7D.png",
-      },
-      {
-        name: "Mantine",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS57rsMTp7tXoWGijtNnFsE3nWru0QFnEzex4uOBl76_Q&sg",
-      },
-      {
-        name: "Axios",
-        img: axiosIcon,
-      },
-      {
-        name: "Auth0",
-        img: "https://cdn.hashnode.com/res/hashnode/image/upload/v1605953217279/M-vk-LPrs.png",
-      },
-      {
-        name: "Leaflet",
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxW8POqMIbIFECHj84m6UwRU34jaA5fbOahtGraoFN&s",
-      },
-      {
-        name: "React Query",
-        img: "https://miro.medium.com/v2/resize:fit:513/1*NvNjVbjTCT_qqloPnR098w.png",
-      },
-      {
-        name: "Swiper",
-        img: "https://miro.medium.com/v2/resize:fit:1128/1*FbvMJKVVYzfHGG3b0NaJGg.png",
-      },
-      {
-        name: "Prisma",
-        img: "https://camo.githubusercontent.com/1899b1c9cea6723925368e3d3ce3b9fb0d88c25e1c0f2f2a90c036f07e2ce81e/68747470733a2f2f692e696d6775722e636f6d2f774434725674342e706e67",
-      },
-      {
-        name: "Express",
-        img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA",
-      },
+      { name: "React", img: techIcons.react },
+      { name: "TypeScript", img: techIcons.typescript },
+      { name: "React Query", img: techIcons.reactQuery },
+      { name: "Mantine", img: techIcons.mantine },
+      { name: "Leaflet", img: techIcons.leaflet },
+      { name: "Express", img: techIcons.express },
+      { name: "Prisma", img: techIcons.prisma },
+      { name: "MongoDB", img: techIcons.mongodb },
+      { name: "JWT", img: techIcons.jwt },
+      { name: "Swiper", img: techIcons.swiper },
     ],
   },
-
   {
-    id: 5,
-    title: "Fast Pizza & Udemy",
-    type: "Design & Web Development",
+    id: 3,
+    title: "Logistics CMS",
+    type: "ASP.NET Core MVC — Logistics CMS",
+    category: "BACKEND",
+    cardHoverTechs: ["MongoDB", "AutoMapper", "Cookie Auth"],
+    accent: "#4dd0e1",
+    cardImage: logisticCmsCover,
+    githubUrl: "https://github.com/anilates97/DotnetMVCCore-LogisticsCms",
+    liveUrl: "",
     imgUrl: [
-      fastPizza1,
-      fastPizza2,
-      fastPizza3,
-      fastPizza4,
-      fastPizza5,
-      fastPizza6,
+      logisticCms1,
+      logisticCms2,
+      logisticCms3,
+      logisticCms4,
+      logisticCms5,
+      logisticCms6,
+      logisticCms7,
+      logisticCms8,
+      logisticCms9,
+      logisticCms10,
     ],
     description:
-      "I have a project called FastPizza. In this project, users can place pizza orders. Once an order is placed, there's an interface to track the order. Tailwind and Redux were used as tools for this project. Initially, the user encounters a screen to input their name, followed by transitioning to the order process. Geolocation is utilized to determine the user's location while placing an order. Additionally, there's an option to prioritize orders, albeit incurring an extra cost during or after the order placement process.",
+      "Logistics CMS is the admin panel and public site for a logistics company. The admin side manages page content (sliders, brands, FAQs, projects), shipment records and shipment tracking events; the data layer uses MongoDB with DTOs and AutoMapper, and admin routes are protected by cookie auth.",
     mainlyUsedTechnologies: [
-      {
-        name: "React",
-        img: reactImg,
-      },
-      {
-        name: "Redux",
-        img: "https://miro.medium.com/v2/resize:fit:500/1*tOI6UC5EaS2fPItCesI-AQ.png",
-      },
-      {
-        name: "Tailwind",
-        img: "https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-light.svg",
-      },
-      {
-        name: "React Router",
-        img: "https://www.svgrepo.com/show/354262/react-router.svg",
-      },
+      { name: "ASP.NET Core MVC", img: techIcons.dotnet },
+      { name: "C#", img: techIcons.csharp },
+      { name: "MongoDB", img: techIcons.mongodb },
+      { name: "AutoMapper", img: techIcons.automapper },
+      { name: "Cookie Authentication", img: techIcons.cookieAuth },
+      { name: "Razor Views", img: techIcons.razor },
+      { name: "Bootstrap", img: techIcons.bootstrap },
     ],
   },
-
+  {
+    id: 4,
+    title: "BlogApp",
+    type: "ASP.NET Core MVC — Blog Platform",
+    category: "BACKEND",
+    cardHoverTechs: ["SQLite", "Cookie Auth", "Reading Metrics"],
+    accent: "#8da3c4",
+    cardImage: blogAppCover,
+    githubUrl: "https://github.com/anilates97/DotnetMVCCore-BlogApp",
+    liveUrl: "",
+    imgUrl: [
+      blogApp1,
+      blogApp2,
+      blogApp3,
+      blogApp4,
+      blogApp5,
+      blogApp6,
+      blogApp7,
+      blogApp8,
+      blogApp9,
+    ],
+    description:
+      "BlogApp is a blog platform with posts, tags, comments, user profiles and reading-time tracking. The backend is ASP.NET Core MVC with EF Core over SQLite, split into repository and service layers, with cookie-based auth for author and admin flows.",
+    mainlyUsedTechnologies: [
+      { name: "ASP.NET Core MVC", img: techIcons.dotnet },
+      { name: "C#", img: techIcons.csharp },
+      { name: "Entity Framework Core", img: techIcons.efCore },
+      { name: "SQLite", img: techIcons.sqlite },
+      { name: "Cookie Authentication", img: techIcons.cookieAuth },
+      { name: "Razor Views", img: techIcons.razor },
+      { name: "Bootstrap", img: techIcons.bootstrap },
+    ],
+  },
+  {
+    id: 5,
+    title: "ADO Bilet",
+    type: "React + Supabase — Ticket Reservation",
+    category: "FULL-STACK",
+    cardHoverTechs: ["Redux Toolkit", "Formik", "Google Maps"],
+    accent: "#f5b942",
+    cardImage: adoBiletCover,
+    githubUrl: "https://github.com/anilates97/React-ADOBilet",
+    liveUrl: "",
+    imgUrl: [
+      adoBilet1,
+      adoBilet2,
+      adoBilet3,
+      adoBilet4,
+      adoBilet5,
+      adoBilet6,
+      adoBilet7,
+      adoBilet8,
+      adoBilet9,
+      adoBilet10,
+    ],
+    description:
+      "ADO Bilet is an event ticket platform with seat selection and a full admin panel. The frontend is React with Redux Toolkit and React Router; Supabase handles auth, role checks and the database layer, and seat availability is updated during the purchase flow.",
+    mainlyUsedTechnologies: [
+      { name: "React", img: techIcons.react },
+      { name: "JavaScript", img: techIcons.javascript },
+      { name: "Redux Toolkit", img: techIcons.redux },
+      { name: "React Router", img: techIcons.reactRouter },
+      { name: "Supabase", img: techIcons.supabase },
+      { name: "Tailwind CSS", img: techIcons.tailwind },
+      { name: "Formik", img: techIcons.formik },
+      { name: "Google Maps API", img: techIcons.googleMaps },
+      { name: "Swiper", img: techIcons.swiper },
+    ],
+  },
   {
     id: 6,
-    title: "Library Simulation & Graduation",
-    type: "Design & Mobile Development",
+    title: "Rafya",
+    type: "Flutter — Mobile Library App",
+    category: "MOBILE",
+    cardHoverTechs: ["Firebase", "Riverpod", "Google Books"],
+    accent: "#c8a572",
+    cardImage: rafyaCover,
+    githubUrl: "https://github.com/anilates97/Flutter-Graduation-Project",
+    liveUrl: "",
     imgUrl: [
       projBitirme1,
       projBitirme2,
@@ -330,136 +360,46 @@ Focused primarily on backend development, admin panel functionality and frontend
       projBitirme10,
     ],
     description:
-      "I have a project named Library Simulation, which is also my graduation project. The application was developed using Flutter and functions as a library archive system. It showcases popular books and allows users to add their preferred books to their personal libraries. Features like adding, deleting, and updating books are available. Additionally, advanced filtering options exist. Users can create, delete, update shelves, and view them. It's possible to place books on appropriate shelves before adding them to the archive. Books can be listed by categories. The app provides Dark Mode and Light Mode options. The 'Lucky Book' feature was added to randomly showcase a book. Users can view and follow other users, utilizing an optional tracking system. Each user has their own library archive, and the following is based on preferences regarding archive likes. Users have the option to hide their archives if they prefer.",
+      "Rafya is a Flutter app for tracking the books you read. Users sign in with Firebase, search through Google Books with an OpenLibrary fallback, group titles into shelves, rate them, and can make their library public so others can follow. The visual side was reworked from an older graduation project into a quieter editorial layout.",
     mainlyUsedTechnologies: [
-      {
-        name: "Flutter",
-        img: "https://w7.pngwing.com/pngs/168/443/png-transparent-flutter-logo-flutter-software-logo-social-media-logo-logo-technology-logo-3d-icon.png",
-      },
-      {
-        name: "Firebase",
-        img: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
-      },
-      {
-        name: "Riverpod",
-        img: "https://codeclusive.io/blog/riverpod-state-management/images/riverpod.png",
-      },
-      {
-        name: "FAwesome",
-        img: "https://www.yucelalkan.com/uploads/fontawesome-kullanimi_5_5_1_b.jpg",
-      },
-      {
-        name: "Lottie",
-        img: "https://cdn.iconscout.com/icon/free/png-256/free-lottie-files-3050917-2538296.png",
-      },
-      {
-        name: "Http",
-        img: "https://cdn-icons-png.flaticon.com/512/1276/1276471.png",
-      },
-      {
-        name: "Dio",
-        img: "https://protocoderspoint.com/wp-content/uploads/2022/12/flutter-dio.jpg",
-      },
+      { name: "Flutter", img: techIcons.flutter },
+      { name: "Dart", img: techIcons.dart },
+      { name: "Material 3", img: techIcons.material },
+      { name: "Firebase", img: techIcons.firebase },
+      { name: "Riverpod", img: techIcons.riverpod },
+      { name: "Google Books API", img: techIcons.googleBooks },
+      { name: "OpenLibrary API", img: techIcons.openLibrary },
+      { name: "Lottie", img: techIcons.lottie },
     ],
   },
-
   {
     id: 7,
-    title: "E-commerce & Freelance",
-    type: "Design & MERN Stack Development",
-    imgUrl: [
-      eCommerce1,
-      eCommerce2,
-      eCommerce3,
-      eCommerce4,
-      eCommerce5,
-      eCommerce6,
-      eCommerce7,
-      eCommerce8,
-      eCommerce9,
-      eCommerce10,
-    ],
-    description:
-      "My project is an E-commerce application designed for online shopping. It includes a cart feature where users can add and remove items. Stripe was integrated for credit card processing. The project is built on the MERN (MongoDB, Express.js, React, Node.js) stack, utilizing MongoDB as the database. The admin panel was developed using Ant Design, while the application incorporates charts using the Recharts package for data visualization.",
-    mainlyUsedTechnologies: [
-      {
-        name: "React",
-        img: reactImg,
-      },
-      {
-        name: "Context",
-        img: "https://miro.medium.com/v2/resize:fit:1000/0*CdSOpVAdLxMvlh7D.png",
-      },
-      {
-        name: "Recharts",
-        img: "https://blog.openreplay.com/images/charting-and-graphing-in-react-with-recharts/images/hero.png",
-      },
-      {
-        name: "Antd",
-        img: "https://camo.githubusercontent.com/70ec62b59182d7ecbc34f6cfe6f043d6ca17b133c398871ef1cdab0fa4d1e424/68747470733a2f2f67772e616c697061796f626a656374732e636f6d2f7a6f732f726d73706f7274616c2f4b4470677667754d704766716148506a6963524b2e737667",
-      },
-      {
-        name: "React Router",
-        img: "https://www.svgrepo.com/show/354262/react-router.svg",
-      },
-      {
-        name: "Stripe",
-        img: "https://easydigitaldownloads.com/wp-content/uploads/edd/2019/03/stripe-product-image.png",
-      },
-      {
-        name: "Express",
-        img: "https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA",
-      },
-      {
-        name: "Mongoose",
-        img: "https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png",
-      },
-    ],
-  },
-
-  {
-    id: 8,
-    title: "Movie Science",
-    type: "Design & Mobile Development",
+    title: "Film Science",
+    type: "Flutter — Movie Discovery App",
+    category: "MOBILE",
+    cardHoverTechs: ["TMDB API", "Firebase", "Riverpod"],
+    accent: "#d77a4a",
+    cardImage: movieScienceCover,
+    githubUrl: "https://github.com/anilates97/Flutter-FilmScienceApp",
+    liveUrl: "",
     imgUrl: [
       movieScience1,
       movieScience2,
-
+      movieScience3,
       movieScience4,
       movieScience5,
       movieScience6,
-      movieScience7,
     ],
     description:
-      "I have a project called Movie Science. In this project, users can view popular movies and their detailed pages. Users can add movies they like to the 'favorites' list. We have the option to add quotes to our favorite movies or view existing quotes. Subsequently, the quotes for these movies are displayed on the application screen, and we can vote on these quotes. The given votes are also displayed on the screen. Flutter was used in this project.",
+      "Film Science is a Flutter movie app built on top of TMDB. Users browse top-rated films, open a detail page with backdrop, metadata and trailer, save favourites to Firestore and write short quotes against the films in their list.",
     mainlyUsedTechnologies: [
-      {
-        name: "Flutter",
-        img: "https://w7.pngwing.com/pngs/168/443/png-transparent-flutter-logo-flutter-software-logo-social-media-logo-logo-technology-logo-3d-icon.png",
-      },
-      {
-        name: "Firebase",
-        img: "https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png",
-      },
-      {
-        name: "Riverpod",
-        img: "https://codeclusive.io/blog/riverpod-state-management/images/riverpod.png",
-      },
-
-      {
-        name: "Http",
-        img: "https://cdn-icons-png.flaticon.com/512/1276/1276471.png",
-      },
-      {
-        name: "Dio",
-        img: "https://protocoderspoint.com/wp-content/uploads/2022/12/flutter-dio.jpg",
-      },
+      { name: "Flutter", img: techIcons.flutter },
+      { name: "Dart", img: techIcons.dart },
+      { name: "Firebase", img: techIcons.firebase },
+      { name: "Riverpod", img: techIcons.riverpod },
+      { name: "TMDB API", img: techIcons.tmdb },
+      { name: "Dio", img: techIcons.dio },
+      { name: "HTTP", img: techIcons.http },
     ],
   },
 ];
-
-function ProjectData() {
-  return <div>ProjectData</div>;
-}
-
-export default ProjectData;

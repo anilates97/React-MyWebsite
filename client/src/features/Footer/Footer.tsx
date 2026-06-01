@@ -26,7 +26,7 @@ function Footer() {
           </Col>
           <Col sm={4} size={12} className="text-center text-sm-end copyright">
             <p className="m-0">
-              Copyright {currentYear} &copy; All Right Reserved
+              Copyright {currentYear} &copy; All Rights Reserved
             </p>
           </Col>
           <Col sm={4} size={12} className="text-center text-sm-end">

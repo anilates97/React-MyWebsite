@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import colorSharp2 from "../../assets/img/color-sharp2.png";
 
@@ -42,45 +42,16 @@ function Projects() {
                 <div>
                   <h2>Projects</h2>
                   <p>
-                    A collection of backend, full stack and frontend projects focused on practical application development,
-                    scalable web systems and modern UI/UX experiences.
-
-                    The portfolio includes financial management systems, logistics CMS platforms, ticket reservation applications,
-                    real estate platforms and modern web-based solutions built with ASP.NET Core MVC, React, SQL Server and modern development workflows.
+                    Selected projects covering financial reporting, CMS
+                    workflows, real estate listings, ticket reservation
+                    and mobile app interfaces.
                   </p>
                 </div>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav
-                    variant="pills"
-                    className="nav-pills mb-5 justify-content align-items-center"
-                    id="#pills-tab"
-                  >
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Featured Work</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Archive</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {projects.map(
-                          (project, index) =>
-                            index < 6 && <ProjectCard key={index} {...project} />
-                        )}
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      <Row>
-                        {projects.map(
-                          (project, index) =>
-                            index >= 6 && <ProjectCard key={index} {...project} />
-                        )}
-                      </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
+                <Row>
+                  {projects.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
+                  ))}
+                </Row>
               </Col>
             </Row>
           </RevealOnce>

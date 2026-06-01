@@ -102,8 +102,9 @@ function Contact() {
               <Col md={6}>
                 <h2>Get In Touch</h2>
                 <p className="contact-intro">
-                  Interested in working together, discussing a project or
-                  connecting professionally? Feel free to reach out.
+                  Open to junior / early-career roles, freelance work or a
+                  quick conversation about a project. The form below comes
+                  straight to my inbox.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <Row>

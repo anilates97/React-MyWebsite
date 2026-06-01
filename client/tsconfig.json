@@ -11,7 +11,7 @@
     "useUnknownInCatchVariables": false,
     "inlineSourceMap": true,
     "noImplicitAny": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

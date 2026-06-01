@@ -1,7 +1,15 @@
 require("dotenv").config();
 
 const nodemailer = require("nodemailer");
-const corsMiddleware = require("cors")({ origin: true });
+
+const allowedOrigins = (process.env.CORS_ORIGIN || "")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
+const corsMiddleware = require("cors")({
+  origin: allowedOrigins.length ? allowedOrigins : true,
+});
 
 const escapeHtml = (value) =>
   String(value)
@@ -31,7 +39,13 @@ const handler = async (req, res) => {
         return;
       }
 
+      const cleanEmail = sanitizeHeader(email);
       const name = `${firstName.trim()} ${lastName.trim()}`;
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+        res.status(400).json({ error: "A valid email address is required" });
+        return;
+      }
 
       if (!process.env.EMAIL_USERNAME || !process.env.EMAIL_PASSWORD) {
         res.status(500).json({ error: "Email service is not configured" });
@@ -48,7 +62,7 @@ const handler = async (req, res) => {
 
       const mail = {
         from: process.env.EMAIL_USERNAME,
-        replyTo: email,
+        replyTo: cleanEmail,
         to: process.env.CONTACT_RECEIVER_EMAIL || process.env.EMAIL_USERNAME,
         subject: `Portfolio Contact - ${sanitizeHeader(subject)}`,
         html: `<p>Name: ${escapeHtml(name)}</p>
